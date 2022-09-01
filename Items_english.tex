@@ -1,0 +1,1901 @@
+\documentclass[]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\pdfoutput=1
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{lmodern}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{rotating}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{tgheros}
+\usepackage{helvet}
+\usetikzlibrary{matrix,positioning,calc}
+\usetikzlibrary{backgrounds}
+\usetikzlibrary{intersections}
+\usetikzlibrary{calc}
+\usetikzlibrary{arrows}
+\usetikzlibrary{shadows}
+
+\begin{document}
+\pagenumbering{gobble} 	                       
+
+\begin{figure}[h]
+\centering	
+\begin{tikzpicture}[scale=0.8,every shadow/.style={opacity=0.2,fill=gray!50!white}]]{helvet}%item1
+	%box
+	\filldraw[drop shadow,fill=white](0cm,0cm) -- (17.7cm,0cm)-- (17.7cm,2.4cm)-- (0cm,2.4cm)-- (0cm,0cm) node[right] {};
+		
+%Text
+\draw[black,thick](0.7cm,1.75cm) node[right,scale=0.8] {\large\textsf{You receive}};
+\draw[black,thick](0.45cm,0.4cm) node[right,scale=0.8] {\large\textsf{Other receives}};
+		
+%Answer
+\draw[very thick,black](17.9cm,0.4cm) -- (20.5cm,0.4cm) node[right] {};
+\draw[very thick,black](17.9cm,1.4cm) -- (20.5cm,1.4cm) node[right] {};
+\draw[black,thick](17.8,1.6) node[right,scale=0.8] {\small\textsf{You}};
+\draw[black,thick](17.8,0.6) node[right,scale=0.8] {\small\textsf{Other}};
+		
+%Slider
+\draw[very thick,black](4.5cm,1.2cm) -- (16.5cm,1.2cm) node[right] {};
+\draw[very thick,black](4.5cm,0.9cm) -- (4.5cm,1.5cm) node[right] {};
+\draw[very thick,black](6cm,0.9cm) -- (6cm,1.5cm) node[right] {};
+\draw[very thick,black](7.5cm,0.9cm) -- (7.5cm,1.5cm) node[right] {};
+\draw[very thick,black](9cm,0.9cm) -- (9cm,1.5cm) node[right] {};
+\draw[very thick,black](10.5cm,0.9cm) -- (10.5cm,1.5cm) node[right] {};
+\draw[very thick,black](12cm,0.9cm) -- (12cm,1.5cm) node[right] {};
+\draw[very thick,black](13.5cm,0.9cm) -- (13.5cm,1.5cm) node[right] {};
+\draw[very thick,black](15cm,0.9cm) -- (15cm,1.5cm) node[right] {};
+\draw[very thick,black](16.5cm,0.9cm) -- (16.5cm,1.5cm) node[right] {};
+%Gray
+\draw[thick,gray](5.25cm,1cm) -- (5.25cm,1.4cm) node[right] {};
+\draw[thick,gray](6.75cm,1cm) -- (6.75cm,1.4cm) node[right] {};
+\draw[thick,gray](8.25cm,1cm) -- (8.25cm,1.4cm) node[right] {};
+\draw[thick,gray](9.75cm,1cm) -- (9.75cm,1.4cm) node[right] {};
+\draw[thick,gray](11.25cm,1cm) -- (11.25cm,1.4cm) node[right] {};
+\draw[thick,gray](12.75cm,1cm) -- (12.75cm,1.4cm) node[right] {};
+\draw[thick,gray](14.25cm,1cm) -- (14.25cm,1.4cm) node[right] {};
+\draw[thick,gray](15.75cm,1cm) -- (15.75cm,1.4cm) node[right] {};
+%small boxes row 1
+\draw[very thick,black](4cm,2.25cm) -- (5cm,2.25cm) node[right] {};
+\draw[very thick,black](5.5cm,2.25cm) -- (6.5cm,2.25cm) node[right] {};
+\draw[very thick,black](7cm,2.25cm) -- (8cm,2.25cm) node[right] {};
+\draw[very thick,black](8.5cm,2.25cm) -- (9.5cm,2.25cm) node[right] {};
+\draw[very thick,black](10cm,2.25cm) -- (11cm,2.25cm) node[right] {};
+\draw[very thick,black](11.5cm,2.25cm) -- (12.5cm,2.25cm) node[right] {};
+\draw[very thick,black](13cm,2.25cm) -- (14cm,2.25cm) node[right] {};
+\draw[very thick,black](14.5cm,2.25cm) -- (15.5cm,2.25cm) node[right] {};
+\draw[very thick,black](16cm,2.25cm) -- (17cm,2.25cm) node[right] {};	
+%small boxes row 2
+\draw[very thick,black](4cm,1.6cm) -- (5cm,1.6cm) node[right] {};
+\draw[very thick,black](5.5cm,1.6cm) -- (6.5cm,1.6cm) node[right] {};
+\draw[very thick,black](7cm,1.6cm) -- (8cm,1.6cm) node[right] {};
+\draw[very thick,black](8.5cm,1.6cm) -- (9.5cm,1.6cm) node[right] {};
+\draw[very thick,black](10cm,1.6cm) -- (11cm,1.6cm) node[right] {};
+\draw[very thick,black](11.5cm,1.6cm) -- (12.5cm,1.6cm) node[right] {};
+\draw[very thick,black](13cm,1.6cm) -- (14cm,1.6cm) node[right] {};
+\draw[very thick,black](14.5cm,1.6cm) -- (15.5cm,1.6cm) node[right] {};
+\draw[very thick,black](16cm,1.6cm) -- (17cm,1.6cm) node[right] {};	
+%small boxes row 3
+\draw[very thick,black](4cm,0.8cm) -- (5cm,0.8cm) node[right] {};
+\draw[very thick,black](5.5cm,0.8cm) -- (6.5cm,0.8cm) node[right] {};
+\draw[very thick,black](7cm,0.8cm) -- (8cm,0.8cm) node[right] {};
+\draw[very thick,black](8.5cm,0.8cm) -- (9.5cm,0.8cm) node[right] {};
+\draw[very thick,black](10cm,0.8cm) -- (11cm,0.8cm) node[right] {};
+\draw[very thick,black](11.5cm,0.8cm) -- (12.5cm,0.8cm) node[right] {};
+\draw[very thick,black](13cm,0.8cm) -- (14cm,0.8cm) node[right] {};
+\draw[very thick,black](14.5cm,0.8cm) -- (15.5cm,0.8cm) node[right] {};
+\draw[very thick,black](16cm,0.8cm) -- (17cm,0.8cm) node[right] {};	
+		
+%small boxes row 4
+\draw[very thick,black](4cm,0.15cm) -- (5cm,0.15cm) node[right] {};
+\draw[very thick,black](5.5cm,0.15cm) -- (6.5cm,0.15cm) node[right] {};
+\draw[very thick,black](7cm,0.15cm) -- (8cm,0.15cm) node[right] {};
+\draw[very thick,black](8.5cm,0.15cm) -- (9.5cm,0.15cm) node[right] {};
+\draw[very thick,black](10cm,0.15cm) -- (11cm,0.15cm) node[right] {};
+\draw[very thick,black](11.5cm,0.15cm) -- (12.5cm,0.15cm) node[right] {};
+\draw[very thick,black](13cm,0.15cm) -- (14cm,0.15cm) node[right] {};
+\draw[very thick,black](14.5cm,0.15cm) -- (15.5cm,0.15cm) node[right] {};
+\draw[very thick,black](16cm,0.15cm) -- (17cm,0.15cm) node[right] {};	
+%small boxes vertical 1
+\draw[very thick,black](4cm,1.6cm) -- (4cm,2.25cm) node[right] {};
+\draw[very thick,black](5.5cm,1.6cm) -- (5.5cm,2.25cm) node[right] {};
+\draw[very thick,black](7cm,1.6cm) -- (7cm,2.25cm) node[right] {};
+\draw[very thick,black](8.5cm,1.6cm) -- (8.5cm,2.25cm) node[right] {};
+\draw[very thick,black](10cm,1.6cm) -- (10cm,2.25cm) node[right] {};
+\draw[very thick,black](11.5cm,1.6cm) -- (11.5cm,2.25cm) node[right] {};
+\draw[very thick,black](13cm,1.6cm) -- (13cm,2.25cm) node[right] {};
+\draw[very thick,black](14.5cm,1.6cm) -- (14.5cm,2.25cm) node[right] {};
+\draw[very thick,black](16cm,1.6cm) -- (16cm,2.25cm) node[right] {};
+%small boxes vertical 2
+\draw[very thick,black](5cm,1.6cm) -- (5cm,2.25cm) node[right] {};
+\draw[very thick,black](6.5cm,1.6cm) -- (6.5cm,2.25cm) node[right] {};
+\draw[very thick,black](8cm,1.6cm) -- (8cm,2.25cm) node[right] {};
+\draw[very thick,black](9.5cm,1.6cm) -- (9.5cm,2.25cm) node[right] {};
+\draw[very thick,black](11cm,1.6cm) -- (11cm,2.25cm) node[right] {};
+\draw[very thick,black](12.5cm,1.6cm) -- (12.5cm,2.25cm) node[right] {};
+\draw[very thick,black](14cm,1.6cm) -- (14cm,2.25cm) node[right] {};
+\draw[very thick,black](15.5cm,1.6cm) -- (15.5cm,2.25cm) node[right] {};
+\draw[very thick,black](17cm,1.6cm) -- (17cm,2.25cm) node[right] {};
+		
+		%small boxes vertical 3
+\draw[very thick,black](5cm,0.15cm) -- (5cm,0.8cm) node[right] {};
+\draw[very thick,black](6.5cm,0.15cm) -- (6.5cm,0.8cm) node[right] {};
+\draw[very thick,black](8cm,0.15cm) -- (8cm,0.8cm) node[right] {};
+\draw[very thick,black](9.5cm,0.15cm) -- (9.5cm,0.8cm) node[right] {};
+\draw[very thick,black](11cm,0.15cm) -- (11cm,0.8cm) node[right] {};
+\draw[very thick,black](12.5cm,0.15cm) -- (12.5cm,0.8cm) node[right] {};
+\draw[very thick,black](14cm,0.15cm) -- (14cm,0.8cm) node[right] {};
+\draw[very thick,black](15.5cm,0.15cm) -- (15.5cm,0.8cm) node[right] {};
+\draw[very thick,black](17cm,0.15cm) -- (17cm,0.8cm) node[right] {};
+		%small boxes vertical 4
+\draw[very thick,black](4cm,0.15cm) -- (4cm,0.8cm) node[right] {};
+\draw[very thick,black](5.5cm,0.15cm) -- (5.5cm,0.8cm) node[right] {};
+\draw[very thick,black](7cm,0.15cm) -- (7cm,0.8cm) node[right] {};
+\draw[very thick,black](8.5cm,0.15cm) -- (8.5cm,0.8cm) node[right] {};
+\draw[very thick,black](10cm,0.15cm) -- (10cm,0.8cm) node[right] {};
+\draw[very thick,black](11.5cm,0.15cm) -- (11.5cm,0.8cm) node[right] {};
+\draw[very thick,black](13cm,0.15cm) -- (13cm,0.8cm) node[right] {};
+\draw[very thick,black](14.5cm,0.15cm) -- (14.5cm,0.8cm) node[right] {};
+\draw[very thick,black](16cm,0.15cm) -- (16cm,0.8cm) node[right] {};
+%You receive
+\draw[black](4.5cm,1.58cm) node[above] {\normalsize\textsf{50}};
+\draw[black](6cm,1.58cm) node[above] {\normalsize\textsf{55}}; 
+\draw[black](7.5cm,1.58cm) node[above] {\normalsize\textsf{59}};
+\draw[black](9cm,1.58cm) node[above] {\normalsize\textsf{63}}; 
+\draw[black](10.5cm,1.58cm) node[above] {\normalsize\textsf{67}}; 
+\draw[black](12cm,1.58cm) node[above] {\normalsize\textsf{72}}; 
+\draw[black](13.5cm,1.58cm) node[above] {\normalsize\textsf{76}};
+\draw[black](15cm,1.58cm) node[above] {\normalsize\textsf{81}}; 
+\draw[black](16.5cm,1.58cm) node[above] {\normalsize\textsf{85}}; 	
+%Other receives
+\draw[black](4.5cm,0.12cm) node[above] {\normalsize\textsf{100}};
+\draw[black](6cm,0.12cm) node[above] {\normalsize\textsf{89}}; 
+\draw[black](7.5cm,0.12cm) node[above] {\normalsize\textsf{79}};
+\draw[black](9cm,0.12cm) node[above] {\normalsize\textsf{68}}; 
+\draw[black](10.5cm,0.12cm) node[above] {\normalsize\textsf{58}}; 
+\draw[black](12cm,0.12cm) node[above] {\normalsize\textsf{47}}; 
+\draw[black](13.5cm,0.12cm) node[above] {\normalsize\textsf{36}};
+\draw[black](15cm,0.12cm) node[above] {\normalsize\textsf{26}}; 
+\draw[black](16.5cm,0.12cm) node[above] {\normalsize\textsf{15}}; 	
+		
+\end{tikzpicture}
+ \medskip
+\begin{tikzpicture}
+\end{tikzpicture}	
+\begin{tikzpicture}[scale=0.8,every shadow/.style={opacity=0.2,fill=gray!50!white}]]{helvet}%item2
+	%box
+	\filldraw[drop shadow,fill=white](0cm,0cm) -- (17.7cm,0cm)-- (17.7cm,2.4cm)-- (0cm,2.4cm)-- (0cm,0cm) node[right] {};
+		%Text
+		\draw[black,thick](0.7cm,1.75cm) node[right,scale=0.8] {\large\textsf{You receive}};
+		\draw[black,thick](0.45cm,0.4cm) node[right,scale=0.8] {\large\textsf{Other receives}};
+		
+		%Answer
+		\draw[very thick,black](17.9cm,0.4cm) -- (20.5cm,0.4cm) node[right] {};
+		\draw[very thick,black](17.9cm,1.4cm) -- (20.5cm,1.4cm) node[right] {};
+		\draw[black,thick](17.8,1.6) node[right,scale=0.8] {\small\textsf{You}};
+		\draw[black,thick](17.8,0.6) node[right,scale=0.8] {\small\textsf{Other}};
+		
+		%Slider
+		\draw[very thick,black](4.5cm,1.2cm) -- (16.5cm,1.2cm) node[right] {};
+		\draw[very thick,black](4.5cm,0.9cm) -- (4.5cm,1.5cm) node[right] {};
+		\draw[very thick,black](6cm,0.9cm) -- (6cm,1.5cm) node[right] {};
+		\draw[very thick,black](7.5cm,0.9cm) -- (7.5cm,1.5cm) node[right] {};
+		\draw[very thick,black](9cm,0.9cm) -- (9cm,1.5cm) node[right] {};
+		\draw[very thick,black](10.5cm,0.9cm) -- (10.5cm,1.5cm) node[right] {};
+		\draw[very thick,black](12cm,0.9cm) -- (12cm,1.5cm) node[right] {};
+		\draw[very thick,black](13.5cm,0.9cm) -- (13.5cm,1.5cm) node[right] {};
+		\draw[very thick,black](15cm,0.9cm) -- (15cm,1.5cm) node[right] {};
+		\draw[very thick,black](16.5cm,0.9cm) -- (16.5cm,1.5cm) node[right] {};
+		%Gray
+		\draw[thick,gray](5.25cm,1cm) -- (5.25cm,1.4cm) node[right] {};
+		\draw[thick,gray](6.75cm,1cm) -- (6.75cm,1.4cm) node[right] {};
+		\draw[thick,gray](8.25cm,1cm) -- (8.25cm,1.4cm) node[right] {};
+		\draw[thick,gray](9.75cm,1cm) -- (9.75cm,1.4cm) node[right] {};
+		\draw[thick,gray](11.25cm,1cm) -- (11.25cm,1.4cm) node[right] {};
+		\draw[thick,gray](12.75cm,1cm) -- (12.75cm,1.4cm) node[right] {};
+		\draw[thick,gray](14.25cm,1cm) -- (14.25cm,1.4cm) node[right] {};
+		\draw[thick,gray](15.75cm,1cm) -- (15.75cm,1.4cm) node[right] {};
+		%small boxes row 1
+		\draw[very thick,black](4cm,2.25cm) -- (5cm,2.25cm) node[right] {};
+		\draw[very thick,black](5.5cm,2.25cm) -- (6.5cm,2.25cm) node[right] {};
+		\draw[very thick,black](7cm,2.25cm) -- (8cm,2.25cm) node[right] {};
+		\draw[very thick,black](8.5cm,2.25cm) -- (9.5cm,2.25cm) node[right] {};
+		\draw[very thick,black](10cm,2.25cm) -- (11cm,2.25cm) node[right] {};
+		\draw[very thick,black](11.5cm,2.25cm) -- (12.5cm,2.25cm) node[right] {};
+		\draw[very thick,black](13cm,2.25cm) -- (14cm,2.25cm) node[right] {};
+		\draw[very thick,black](14.5cm,2.25cm) -- (15.5cm,2.25cm) node[right] {};
+		\draw[very thick,black](16cm,2.25cm) -- (17cm,2.25cm) node[right] {};	
+		%small boxes row 2
+		\draw[very thick,black](4cm,1.6cm) -- (5cm,1.6cm) node[right] {};
+		\draw[very thick,black](5.5cm,1.6cm) -- (6.5cm,1.6cm) node[right] {};
+		\draw[very thick,black](7cm,1.6cm) -- (8cm,1.6cm) node[right] {};
+		\draw[very thick,black](8.5cm,1.6cm) -- (9.5cm,1.6cm) node[right] {};
+		\draw[very thick,black](10cm,1.6cm) -- (11cm,1.6cm) node[right] {};
+		\draw[very thick,black](11.5cm,1.6cm) -- (12.5cm,1.6cm) node[right] {};
+		\draw[very thick,black](13cm,1.6cm) -- (14cm,1.6cm) node[right] {};
+		\draw[very thick,black](14.5cm,1.6cm) -- (15.5cm,1.6cm) node[right] {};
+		\draw[very thick,black](16cm,1.6cm) -- (17cm,1.6cm) node[right] {};	
+		%small boxes row 3
+		\draw[very thick,black](4cm,0.8cm) -- (5cm,0.8cm) node[right] {};
+		\draw[very thick,black](5.5cm,0.8cm) -- (6.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](7cm,0.8cm) -- (8cm,0.8cm) node[right] {};
+		\draw[very thick,black](8.5cm,0.8cm) -- (9.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](10cm,0.8cm) -- (11cm,0.8cm) node[right] {};
+		\draw[very thick,black](11.5cm,0.8cm) -- (12.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](13cm,0.8cm) -- (14cm,0.8cm) node[right] {};
+		\draw[very thick,black](14.5cm,0.8cm) -- (15.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](16cm,0.8cm) -- (17cm,0.8cm) node[right] {};	
+		
+		%small boxes row 4
+		\draw[very thick,black](4cm,0.15cm) -- (5cm,0.15cm) node[right] {};
+		\draw[very thick,black](5.5cm,0.15cm) -- (6.5cm,0.15cm) node[right] {};
+		\draw[very thick,black](7cm,0.15cm) -- (8cm,0.15cm) node[right] {};
+		\draw[very thick,black](8.5cm,0.15cm) -- (9.5cm,0.15cm) node[right] {};
+		\draw[very thick,black](10cm,0.15cm) -- (11cm,0.15cm) node[right] {};
+		\draw[very thick,black](11.5cm,0.15cm) -- (12.5cm,0.15cm) node[right] {};
+		\draw[very thick,black](13cm,0.15cm) -- (14cm,0.15cm) node[right] {};
+		\draw[very thick,black](14.5cm,0.15cm) -- (15.5cm,0.15cm) node[right] {};
+		\draw[very thick,black](16cm,0.15cm) -- (17cm,0.15cm) node[right] {};	
+		%small boxes vertical 1
+		\draw[very thick,black](4cm,1.6cm) -- (4cm,2.25cm) node[right] {};
+		\draw[very thick,black](5.5cm,1.6cm) -- (5.5cm,2.25cm) node[right] {};
+		\draw[very thick,black](7cm,1.6cm) -- (7cm,2.25cm) node[right] {};
+		\draw[very thick,black](8.5cm,1.6cm) -- (8.5cm,2.25cm) node[right] {};
+		\draw[very thick,black](10cm,1.6cm) -- (10cm,2.25cm) node[right] {};
+		\draw[very thick,black](11.5cm,1.6cm) -- (11.5cm,2.25cm) node[right] {};
+		\draw[very thick,black](13cm,1.6cm) -- (13cm,2.25cm) node[right] {};
+		\draw[very thick,black](14.5cm,1.6cm) -- (14.5cm,2.25cm) node[right] {};
+		\draw[very thick,black](16cm,1.6cm) -- (16cm,2.25cm) node[right] {};
+		%small boxes vertical 2
+		\draw[very thick,black](5cm,1.6cm) -- (5cm,2.25cm) node[right] {};
+		\draw[very thick,black](6.5cm,1.6cm) -- (6.5cm,2.25cm) node[right] {};
+		\draw[very thick,black](8cm,1.6cm) -- (8cm,2.25cm) node[right] {};
+		\draw[very thick,black](9.5cm,1.6cm) -- (9.5cm,2.25cm) node[right] {};
+		\draw[very thick,black](11cm,1.6cm) -- (11cm,2.25cm) node[right] {};
+		\draw[very thick,black](12.5cm,1.6cm) -- (12.5cm,2.25cm) node[right] {};
+		\draw[very thick,black](14cm,1.6cm) -- (14cm,2.25cm) node[right] {};
+		\draw[very thick,black](15.5cm,1.6cm) -- (15.5cm,2.25cm) node[right] {};
+		\draw[very thick,black](17cm,1.6cm) -- (17cm,2.25cm) node[right] {};
+		
+		%small boxes vertical 3
+		\draw[very thick,black](5cm,0.15cm) -- (5cm,0.8cm) node[right] {};
+		\draw[very thick,black](6.5cm,0.15cm) -- (6.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](8cm,0.15cm) -- (8cm,0.8cm) node[right] {};
+		\draw[very thick,black](9.5cm,0.15cm) -- (9.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](11cm,0.15cm) -- (11cm,0.8cm) node[right] {};
+		\draw[very thick,black](12.5cm,0.15cm) -- (12.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](14cm,0.15cm) -- (14cm,0.8cm) node[right] {};
+		\draw[very thick,black](15.5cm,0.15cm) -- (15.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](17cm,0.15cm) -- (17cm,0.8cm) node[right] {};
+		%small boxes vertical 4
+		\draw[very thick,black](4cm,0.15cm) -- (4cm,0.8cm) node[right] {};
+		\draw[very thick,black](5.5cm,0.15cm) -- (5.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](7cm,0.15cm) -- (7cm,0.8cm) node[right] {};
+		\draw[very thick,black](8.5cm,0.15cm) -- (8.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](10cm,0.15cm) -- (10cm,0.8cm) node[right] {};
+		\draw[very thick,black](11.5cm,0.15cm) -- (11.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](13cm,0.15cm) -- (13cm,0.8cm) node[right] {};
+		\draw[very thick,black](14.5cm,0.15cm) -- (14.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](16cm,0.15cm) -- (16cm,0.8cm) node[right] {};
+		%You receive
+		\draw[black](4.5cm,1.58cm) node[above] {\normalsize\textsf{15}};
+		\draw[black](6cm,1.58cm) node[above] {\normalsize\textsf{26}}; 
+		\draw[black](7.5cm,1.58cm) node[above] {\normalsize\textsf{36}};
+		\draw[black](9cm,1.58cm) node[above] {\normalsize\textsf{47}}; 
+		\draw[black](10.5cm,1.58cm) node[above] {\normalsize\textsf{58}}; 
+		\draw[black](12cm,1.58cm) node[above] {\normalsize\textsf{68}}; 
+		\draw[black](13.5cm,1.58cm) node[above] {\normalsize\textsf{79}};
+		\draw[black](15cm,1.58cm) node[above] {\normalsize\textsf{90}}; 
+		\draw[black](16.5cm,1.58cm) node[above] {\normalsize\textsf{100}}; 	
+		%Other receives
+		\draw[black](4.5cm,0.12cm) node[above] {\normalsize\textsf{15}};
+		\draw[black](6cm,0.12cm) node[above] {\normalsize\textsf{19}}; 
+		\draw[black](7.5cm,0.12cm) node[above] {\normalsize\textsf{23}};
+		\draw[black](9cm,0.12cm) node[above] {\normalsize\textsf{28}}; 
+		\draw[black](10.5cm,0.12cm) node[above] {\normalsize\textsf{33}}; 
+		\draw[black](12cm,0.12cm) node[above] {\normalsize\textsf{37}}; 
+		\draw[black](13.5cm,0.12cm) node[above] {\normalsize\textsf{41}};
+		\draw[black](15cm,0.12cm) node[above] {\normalsize\textsf{46}}; 
+		\draw[black](16.5cm,0.12cm) node[above] {\normalsize\textsf{50}}; 	
+		
+	\end{tikzpicture}
+     \medskip
+    \begin{tikzpicture}
+    \end{tikzpicture}	
+	\begin{tikzpicture}[scale=0.8,every shadow/.style={opacity=0.2,fill=gray!50!white}]]{helvet}%item3
+		%box
+		\filldraw[drop shadow,fill=white](0cm,0cm) -- (17.7cm,0cm)-- (17.7cm,2.4cm)-- (0cm,2.4cm)-- (0cm,0cm) node[right] {};
+	
+	%Text
+	\draw[black,thick](0.7cm,1.75cm) node[right,scale=0.8] {\large\textsf{You receive}};
+	\draw[black,thick](0.45cm,0.4cm) node[right,scale=0.8] {\large\textsf{Other receives}};
+	
+	%Answer
+	\draw[very thick,black](17.9cm,0.4cm) -- (20.5cm,0.4cm) node[right] {};
+	\draw[very thick,black](17.9cm,1.4cm) -- (20.5cm,1.4cm) node[right] {};
+	\draw[black,thick](17.8,1.6) node[right,scale=0.8] {\small\textsf{You}};
+	\draw[black,thick](17.8,0.6) node[right,scale=0.8] {\small\textsf{Other}};
+	
+	%Slider
+	\draw[very thick,black](4.5cm,1.2cm) -- (16.5cm,1.2cm) node[right] {};
+	\draw[very thick,black](4.5cm,0.9cm) -- (4.5cm,1.5cm) node[right] {};
+	\draw[very thick,black](6cm,0.9cm) -- (6cm,1.5cm) node[right] {};
+	\draw[very thick,black](7.5cm,0.9cm) -- (7.5cm,1.5cm) node[right] {};
+	\draw[very thick,black](9cm,0.9cm) -- (9cm,1.5cm) node[right] {};
+	\draw[very thick,black](10.5cm,0.9cm) -- (10.5cm,1.5cm) node[right] {};
+	\draw[very thick,black](12cm,0.9cm) -- (12cm,1.5cm) node[right] {};
+	\draw[very thick,black](13.5cm,0.9cm) -- (13.5cm,1.5cm) node[right] {};
+	\draw[very thick,black](15cm,0.9cm) -- (15cm,1.5cm) node[right] {};
+	\draw[very thick,black](16.5cm,0.9cm) -- (16.5cm,1.5cm) node[right] {};
+	%Gray
+	\draw[thick,gray](5.25cm,1cm) -- (5.25cm,1.4cm) node[right] {};
+	\draw[thick,gray](6.75cm,1cm) -- (6.75cm,1.4cm) node[right] {};
+	\draw[thick,gray](8.25cm,1cm) -- (8.25cm,1.4cm) node[right] {};
+	\draw[thick,gray](9.75cm,1cm) -- (9.75cm,1.4cm) node[right] {};
+	\draw[thick,gray](11.25cm,1cm) -- (11.25cm,1.4cm) node[right] {};
+	\draw[thick,gray](12.75cm,1cm) -- (12.75cm,1.4cm) node[right] {};
+	\draw[thick,gray](14.25cm,1cm) -- (14.25cm,1.4cm) node[right] {};
+	\draw[thick,gray](15.75cm,1cm) -- (15.75cm,1.4cm) node[right] {};
+	%small boxes row 1
+	\draw[very thick,black](4cm,2.25cm) -- (5cm,2.25cm) node[right] {};
+	\draw[very thick,black](5.5cm,2.25cm) -- (6.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](7cm,2.25cm) -- (8cm,2.25cm) node[right] {};
+	\draw[very thick,black](8.5cm,2.25cm) -- (9.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](10cm,2.25cm) -- (11cm,2.25cm) node[right] {};
+	\draw[very thick,black](11.5cm,2.25cm) -- (12.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](13cm,2.25cm) -- (14cm,2.25cm) node[right] {};
+	\draw[very thick,black](14.5cm,2.25cm) -- (15.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](16cm,2.25cm) -- (17cm,2.25cm) node[right] {};	
+	%small boxes row 2
+	\draw[very thick,black](4cm,1.6cm) -- (5cm,1.6cm) node[right] {};
+	\draw[very thick,black](5.5cm,1.6cm) -- (6.5cm,1.6cm) node[right] {};
+	\draw[very thick,black](7cm,1.6cm) -- (8cm,1.6cm) node[right] {};
+	\draw[very thick,black](8.5cm,1.6cm) -- (9.5cm,1.6cm) node[right] {};
+	\draw[very thick,black](10cm,1.6cm) -- (11cm,1.6cm) node[right] {};
+	\draw[very thick,black](11.5cm,1.6cm) -- (12.5cm,1.6cm) node[right] {};
+	\draw[very thick,black](13cm,1.6cm) -- (14cm,1.6cm) node[right] {};
+	\draw[very thick,black](14.5cm,1.6cm) -- (15.5cm,1.6cm) node[right] {};
+	\draw[very thick,black](16cm,1.6cm) -- (17cm,1.6cm) node[right] {};	
+	%small boxes row 3
+	\draw[very thick,black](4cm,0.8cm) -- (5cm,0.8cm) node[right] {};
+	\draw[very thick,black](5.5cm,0.8cm) -- (6.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](7cm,0.8cm) -- (8cm,0.8cm) node[right] {};
+	\draw[very thick,black](8.5cm,0.8cm) -- (9.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](10cm,0.8cm) -- (11cm,0.8cm) node[right] {};
+	\draw[very thick,black](11.5cm,0.8cm) -- (12.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](13cm,0.8cm) -- (14cm,0.8cm) node[right] {};
+	\draw[very thick,black](14.5cm,0.8cm) -- (15.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](16cm,0.8cm) -- (17cm,0.8cm) node[right] {};	
+	
+	%small boxes row 4
+	\draw[very thick,black](4cm,0.15cm) -- (5cm,0.15cm) node[right] {};
+	\draw[very thick,black](5.5cm,0.15cm) -- (6.5cm,0.15cm) node[right] {};
+	\draw[very thick,black](7cm,0.15cm) -- (8cm,0.15cm) node[right] {};
+	\draw[very thick,black](8.5cm,0.15cm) -- (9.5cm,0.15cm) node[right] {};
+	\draw[very thick,black](10cm,0.15cm) -- (11cm,0.15cm) node[right] {};
+	\draw[very thick,black](11.5cm,0.15cm) -- (12.5cm,0.15cm) node[right] {};
+	\draw[very thick,black](13cm,0.15cm) -- (14cm,0.15cm) node[right] {};
+	\draw[very thick,black](14.5cm,0.15cm) -- (15.5cm,0.15cm) node[right] {};
+	\draw[very thick,black](16cm,0.15cm) -- (17cm,0.15cm) node[right] {};	
+	%small boxes vertical 1
+	\draw[very thick,black](4cm,1.6cm) -- (4cm,2.25cm) node[right] {};
+	\draw[very thick,black](5.5cm,1.6cm) -- (5.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](7cm,1.6cm) -- (7cm,2.25cm) node[right] {};
+	\draw[very thick,black](8.5cm,1.6cm) -- (8.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](10cm,1.6cm) -- (10cm,2.25cm) node[right] {};
+	\draw[very thick,black](11.5cm,1.6cm) -- (11.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](13cm,1.6cm) -- (13cm,2.25cm) node[right] {};
+	\draw[very thick,black](14.5cm,1.6cm) -- (14.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](16cm,1.6cm) -- (16cm,2.25cm) node[right] {};
+	%small boxes vertical 2
+	\draw[very thick,black](5cm,1.6cm) -- (5cm,2.25cm) node[right] {};
+	\draw[very thick,black](6.5cm,1.6cm) -- (6.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](8cm,1.6cm) -- (8cm,2.25cm) node[right] {};
+	\draw[very thick,black](9.5cm,1.6cm) -- (9.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](11cm,1.6cm) -- (11cm,2.25cm) node[right] {};
+	\draw[very thick,black](12.5cm,1.6cm) -- (12.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](14cm,1.6cm) -- (14cm,2.25cm) node[right] {};
+	\draw[very thick,black](15.5cm,1.6cm) -- (15.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](17cm,1.6cm) -- (17cm,2.25cm) node[right] {};
+	
+	%small boxes vertical 3
+	\draw[very thick,black](5cm,0.15cm) -- (5cm,0.8cm) node[right] {};
+	\draw[very thick,black](6.5cm,0.15cm) -- (6.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](8cm,0.15cm) -- (8cm,0.8cm) node[right] {};
+	\draw[very thick,black](9.5cm,0.15cm) -- (9.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](11cm,0.15cm) -- (11cm,0.8cm) node[right] {};
+	\draw[very thick,black](12.5cm,0.15cm) -- (12.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](14cm,0.15cm) -- (14cm,0.8cm) node[right] {};
+	\draw[very thick,black](15.5cm,0.15cm) -- (15.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](17cm,0.15cm) -- (17cm,0.8cm) node[right] {};
+	%small boxes vertical 4
+	\draw[very thick,black](4cm,0.15cm) -- (4cm,0.8cm) node[right] {};
+	\draw[very thick,black](5.5cm,0.15cm) -- (5.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](7cm,0.15cm) -- (7cm,0.8cm) node[right] {};
+	\draw[very thick,black](8.5cm,0.15cm) -- (8.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](10cm,0.15cm) -- (10cm,0.8cm) node[right] {};
+	\draw[very thick,black](11.5cm,0.15cm) -- (11.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](13cm,0.15cm) -- (13cm,0.8cm) node[right] {};
+	\draw[very thick,black](14.5cm,0.15cm) -- (14.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](16cm,0.15cm) -- (16cm,0.8cm) node[right] {};
+	%You receive
+	\draw[black](4.5cm,1.58cm) node[above] {\normalsize\textsf{15}};
+	\draw[black](6cm,1.58cm) node[above] {\normalsize\textsf{26}}; 
+	\draw[black](7.5cm,1.58cm) node[above] {\normalsize\textsf{36}};
+	\draw[black](9cm,1.58cm) node[above] {\normalsize\textsf{47}}; 
+	\draw[black](10.5cm,1.58cm) node[above] {\normalsize\textsf{58}}; 
+	\draw[black](12cm,1.58cm) node[above] {\normalsize\textsf{68}}; 
+	\draw[black](13.5cm,1.58cm) node[above] {\normalsize\textsf{79}};
+	\draw[black](15cm,1.58cm) node[above] {\normalsize\textsf{89}}; 
+	\draw[black](16.5cm,1.58cm) node[above] {\normalsize\textsf{100}}; 	
+	%Other receives
+	\draw[black](4.5cm,0.12cm) node[above] {\normalsize\textsf{85}};
+	\draw[black](6cm,0.12cm) node[above] {\normalsize\textsf{80}}; 
+	\draw[black](7.5cm,0.12cm) node[above] {\normalsize\textsf{76}};
+	\draw[black](9cm,0.12cm) node[above] {\normalsize\textsf{72}}; 
+	\draw[black](10.5cm,0.12cm) node[above] {\normalsize\textsf{67}}; 
+	\draw[black](12cm,0.12cm) node[above] {\normalsize\textsf{63}}; 
+	\draw[black](13.5cm,0.12cm) node[above] {\normalsize\textsf{59}};
+	\draw[black](15cm,0.12cm) node[above] {\normalsize\textsf{55}}; 
+	\draw[black](16.5cm,0.12cm) node[above] {\normalsize\textsf{50}};  
+	\end{tikzpicture}
+ \medskip
+\begin{tikzpicture}
+\end{tikzpicture}	
+	\begin{tikzpicture}[scale=0.8,every shadow/.style={opacity=0.2,fill=gray!50!white}]]{helvet}%item4
+		%box
+		\filldraw[drop shadow,fill=white](0cm,0cm) -- (17.7cm,0cm)-- (17.7cm,2.4cm)-- (0cm,2.4cm)-- (0cm,0cm) node[right] {};
+	
+	%Text
+	\draw[black,thick](0.7cm,1.75cm) node[right,scale=0.8] {\large\textsf{You receive}};
+	\draw[black,thick](0.45cm,0.4cm) node[right,scale=0.8] {\large\textsf{Other receives}};
+	
+	%Answer
+	\draw[very thick,black](17.9cm,0.4cm) -- (20.5cm,0.4cm) node[right] {};
+	\draw[very thick,black](17.9cm,1.4cm) -- (20.5cm,1.4cm) node[right] {};
+	\draw[black,thick](17.8,1.6) node[right,scale=0.8] {\small\textsf{You}};
+	\draw[black,thick](17.8,0.6) node[right,scale=0.8] {\small\textsf{Other}};
+	
+	%Slider
+	\draw[very thick,black](4.5cm,1.2cm) -- (16.5cm,1.2cm) node[right] {};
+	\draw[very thick,black](4.5cm,0.9cm) -- (4.5cm,1.5cm) node[right] {};
+	\draw[very thick,black](6cm,0.9cm) -- (6cm,1.5cm) node[right] {};
+	\draw[very thick,black](7.5cm,0.9cm) -- (7.5cm,1.5cm) node[right] {};
+	\draw[very thick,black](9cm,0.9cm) -- (9cm,1.5cm) node[right] {};
+	\draw[very thick,black](10.5cm,0.9cm) -- (10.5cm,1.5cm) node[right] {};
+	\draw[very thick,black](12cm,0.9cm) -- (12cm,1.5cm) node[right] {};
+	\draw[very thick,black](13.5cm,0.9cm) -- (13.5cm,1.5cm) node[right] {};
+	\draw[very thick,black](15cm,0.9cm) -- (15cm,1.5cm) node[right] {};
+	\draw[very thick,black](16.5cm,0.9cm) -- (16.5cm,1.5cm) node[right] {};
+	%Gray
+	\draw[thick,gray](5.25cm,1cm) -- (5.25cm,1.4cm) node[right] {};
+	\draw[thick,gray](6.75cm,1cm) -- (6.75cm,1.4cm) node[right] {};
+	\draw[thick,gray](8.25cm,1cm) -- (8.25cm,1.4cm) node[right] {};
+	\draw[thick,gray](9.75cm,1cm) -- (9.75cm,1.4cm) node[right] {};
+	\draw[thick,gray](11.25cm,1cm) -- (11.25cm,1.4cm) node[right] {};
+	\draw[thick,gray](12.75cm,1cm) -- (12.75cm,1.4cm) node[right] {};
+	\draw[thick,gray](14.25cm,1cm) -- (14.25cm,1.4cm) node[right] {};
+	\draw[thick,gray](15.75cm,1cm) -- (15.75cm,1.4cm) node[right] {};
+	%small boxes row 1
+	\draw[very thick,black](4cm,2.25cm) -- (5cm,2.25cm) node[right] {};
+	\draw[very thick,black](5.5cm,2.25cm) -- (6.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](7cm,2.25cm) -- (8cm,2.25cm) node[right] {};
+	\draw[very thick,black](8.5cm,2.25cm) -- (9.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](10cm,2.25cm) -- (11cm,2.25cm) node[right] {};
+	\draw[very thick,black](11.5cm,2.25cm) -- (12.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](13cm,2.25cm) -- (14cm,2.25cm) node[right] {};
+	\draw[very thick,black](14.5cm,2.25cm) -- (15.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](16cm,2.25cm) -- (17cm,2.25cm) node[right] {};	
+	%small boxes row 2
+	\draw[very thick,black](4cm,1.6cm) -- (5cm,1.6cm) node[right] {};
+	\draw[very thick,black](5.5cm,1.6cm) -- (6.5cm,1.6cm) node[right] {};
+	\draw[very thick,black](7cm,1.6cm) -- (8cm,1.6cm) node[right] {};
+	\draw[very thick,black](8.5cm,1.6cm) -- (9.5cm,1.6cm) node[right] {};
+	\draw[very thick,black](10cm,1.6cm) -- (11cm,1.6cm) node[right] {};
+	\draw[very thick,black](11.5cm,1.6cm) -- (12.5cm,1.6cm) node[right] {};
+	\draw[very thick,black](13cm,1.6cm) -- (14cm,1.6cm) node[right] {};
+	\draw[very thick,black](14.5cm,1.6cm) -- (15.5cm,1.6cm) node[right] {};
+	\draw[very thick,black](16cm,1.6cm) -- (17cm,1.6cm) node[right] {};	
+	%small boxes row 3
+	\draw[very thick,black](4cm,0.8cm) -- (5cm,0.8cm) node[right] {};
+	\draw[very thick,black](5.5cm,0.8cm) -- (6.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](7cm,0.8cm) -- (8cm,0.8cm) node[right] {};
+	\draw[very thick,black](8.5cm,0.8cm) -- (9.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](10cm,0.8cm) -- (11cm,0.8cm) node[right] {};
+	\draw[very thick,black](11.5cm,0.8cm) -- (12.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](13cm,0.8cm) -- (14cm,0.8cm) node[right] {};
+	\draw[very thick,black](14.5cm,0.8cm) -- (15.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](16cm,0.8cm) -- (17cm,0.8cm) node[right] {};	
+	
+	%small boxes row 4
+	\draw[very thick,black](4cm,0.15cm) -- (5cm,0.15cm) node[right] {};
+	\draw[very thick,black](5.5cm,0.15cm) -- (6.5cm,0.15cm) node[right] {};
+	\draw[very thick,black](7cm,0.15cm) -- (8cm,0.15cm) node[right] {};
+	\draw[very thick,black](8.5cm,0.15cm) -- (9.5cm,0.15cm) node[right] {};
+	\draw[very thick,black](10cm,0.15cm) -- (11cm,0.15cm) node[right] {};
+	\draw[very thick,black](11.5cm,0.15cm) -- (12.5cm,0.15cm) node[right] {};
+	\draw[very thick,black](13cm,0.15cm) -- (14cm,0.15cm) node[right] {};
+	\draw[very thick,black](14.5cm,0.15cm) -- (15.5cm,0.15cm) node[right] {};
+	\draw[very thick,black](16cm,0.15cm) -- (17cm,0.15cm) node[right] {};	
+	%small boxes vertical 1
+	\draw[very thick,black](4cm,1.6cm) -- (4cm,2.25cm) node[right] {};
+	\draw[very thick,black](5.5cm,1.6cm) -- (5.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](7cm,1.6cm) -- (7cm,2.25cm) node[right] {};
+	\draw[very thick,black](8.5cm,1.6cm) -- (8.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](10cm,1.6cm) -- (10cm,2.25cm) node[right] {};
+	\draw[very thick,black](11.5cm,1.6cm) -- (11.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](13cm,1.6cm) -- (13cm,2.25cm) node[right] {};
+	\draw[very thick,black](14.5cm,1.6cm) -- (14.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](16cm,1.6cm) -- (16cm,2.25cm) node[right] {};
+	%small boxes vertical 2
+	\draw[very thick,black](5cm,1.6cm) -- (5cm,2.25cm) node[right] {};
+	\draw[very thick,black](6.5cm,1.6cm) -- (6.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](8cm,1.6cm) -- (8cm,2.25cm) node[right] {};
+	\draw[very thick,black](9.5cm,1.6cm) -- (9.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](11cm,1.6cm) -- (11cm,2.25cm) node[right] {};
+	\draw[very thick,black](12.5cm,1.6cm) -- (12.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](14cm,1.6cm) -- (14cm,2.25cm) node[right] {};
+	\draw[very thick,black](15.5cm,1.6cm) -- (15.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](17cm,1.6cm) -- (17cm,2.25cm) node[right] {};
+	
+	%small boxes vertical 3
+	\draw[very thick,black](5cm,0.15cm) -- (5cm,0.8cm) node[right] {};
+	\draw[very thick,black](6.5cm,0.15cm) -- (6.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](8cm,0.15cm) -- (8cm,0.8cm) node[right] {};
+	\draw[very thick,black](9.5cm,0.15cm) -- (9.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](11cm,0.15cm) -- (11cm,0.8cm) node[right] {};
+	\draw[very thick,black](12.5cm,0.15cm) -- (12.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](14cm,0.15cm) -- (14cm,0.8cm) node[right] {};
+	\draw[very thick,black](15.5cm,0.15cm) -- (15.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](17cm,0.15cm) -- (17cm,0.8cm) node[right] {};
+	%small boxes vertical 4
+	\draw[very thick,black](4cm,0.15cm) -- (4cm,0.8cm) node[right] {};
+	\draw[very thick,black](5.5cm,0.15cm) -- (5.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](7cm,0.15cm) -- (7cm,0.8cm) node[right] {};
+	\draw[very thick,black](8.5cm,0.15cm) -- (8.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](10cm,0.15cm) -- (10cm,0.8cm) node[right] {};
+	\draw[very thick,black](11.5cm,0.15cm) -- (11.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](13cm,0.15cm) -- (13cm,0.8cm) node[right] {};
+	\draw[very thick,black](14.5cm,0.15cm) -- (14.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](16cm,0.15cm) -- (16cm,0.8cm) node[right] {};
+	%You receive
+	\draw[black](4.5cm,1.58cm) node[above] {\normalsize\textsf{85}};
+	\draw[black](6cm,1.58cm) node[above] {\normalsize\textsf{80}}; 
+	\draw[black](7.5cm,1.58cm) node[above] {\normalsize\textsf{76}};
+	\draw[black](9cm,1.58cm) node[above] {\normalsize\textsf{72}}; 
+	\draw[black](10.5cm,1.58cm) node[above] {\normalsize\textsf{67}}; 
+	\draw[black](12cm,1.58cm) node[above] {\normalsize\textsf{63}}; 
+	\draw[black](13.5cm,1.58cm) node[above] {\normalsize\textsf{59}};
+	\draw[black](15cm,1.58cm) node[above] {\normalsize\textsf{54}}; 
+	\draw[black](16.5cm,1.58cm) node[above] {\normalsize\textsf{50}}; 	
+	%Other receives
+	\draw[black](4.5cm,0.12cm) node[above] {\normalsize\textsf{85}};
+	\draw[black](6cm,0.12cm) node[above] {\normalsize\textsf{74}}; 
+	\draw[black](7.5cm,0.12cm) node[above] {\normalsize\textsf{64}};
+	\draw[black](9cm,0.12cm) node[above] {\normalsize\textsf{53}}; 
+	\draw[black](10.5cm,0.12cm) node[above] {\normalsize\textsf{42}}; 
+	\draw[black](12cm,0.12cm) node[above] {\normalsize\textsf{32}}; 
+	\draw[black](13.5cm,0.12cm) node[above] {\normalsize\textsf{21}};
+	\draw[black](15cm,0.12cm) node[above] {\normalsize\textsf{11}}; 
+	\draw[black](16.5cm,0.12cm) node[above] {\normalsize\textsf{0}};   
+	\end{tikzpicture}
+ \medskip
+\begin{tikzpicture}
+\end{tikzpicture}	
+	\begin{tikzpicture}[scale=0.8,every shadow/.style={opacity=0.2,fill=gray!50!white}]]{helvet}%item5
+		%box
+		\filldraw[drop shadow,fill=white](0cm,0cm) -- (17.7cm,0cm)-- (17.7cm,2.4cm)-- (0cm,2.4cm)-- (0cm,0cm) node[right] {};
+		%Text
+		\draw[black,thick](0.7cm,1.75cm) node[right,scale=0.8] {\large\textsf{You receive}};
+		\draw[black,thick](0.45cm,0.4cm) node[right,scale=0.8] {\large\textsf{Other receives}};
+		
+		%Answer
+		\draw[very thick,black](17.9cm,0.4cm) -- (20.5cm,0.4cm) node[right] {};
+		\draw[very thick,black](17.9cm,1.4cm) -- (20.5cm,1.4cm) node[right] {};
+		\draw[black,thick](17.8,1.6) node[right,scale=0.8] {\small\textsf{You}};
+		\draw[black,thick](17.8,0.6) node[right,scale=0.8] {\small\textsf{Other}};
+		
+		%Slider
+		\draw[very thick,black](4.5cm,1.2cm) -- (16.5cm,1.2cm) node[right] {};
+		\draw[very thick,black](4.5cm,0.9cm) -- (4.5cm,1.5cm) node[right] {};
+		\draw[very thick,black](6cm,0.9cm) -- (6cm,1.5cm) node[right] {};
+		\draw[very thick,black](7.5cm,0.9cm) -- (7.5cm,1.5cm) node[right] {};
+		\draw[very thick,black](9cm,0.9cm) -- (9cm,1.5cm) node[right] {};
+		\draw[very thick,black](10.5cm,0.9cm) -- (10.5cm,1.5cm) node[right] {};
+		\draw[very thick,black](12cm,0.9cm) -- (12cm,1.5cm) node[right] {};
+		\draw[very thick,black](13.5cm,0.9cm) -- (13.5cm,1.5cm) node[right] {};
+		\draw[very thick,black](15cm,0.9cm) -- (15cm,1.5cm) node[right] {};
+		\draw[very thick,black](16.5cm,0.9cm) -- (16.5cm,1.5cm) node[right] {};
+		%Gray
+		\draw[thick,gray](5.25cm,1cm) -- (5.25cm,1.4cm) node[right] {};
+		\draw[thick,gray](6.75cm,1cm) -- (6.75cm,1.4cm) node[right] {};
+		\draw[thick,gray](8.25cm,1cm) -- (8.25cm,1.4cm) node[right] {};
+		\draw[thick,gray](9.75cm,1cm) -- (9.75cm,1.4cm) node[right] {};
+		\draw[thick,gray](11.25cm,1cm) -- (11.25cm,1.4cm) node[right] {};
+		\draw[thick,gray](12.75cm,1cm) -- (12.75cm,1.4cm) node[right] {};
+		\draw[thick,gray](14.25cm,1cm) -- (14.25cm,1.4cm) node[right] {};
+		\draw[thick,gray](15.75cm,1cm) -- (15.75cm,1.4cm) node[right] {};
+		%small boxes row 1
+		\draw[very thick,black](4cm,2.25cm) -- (5cm,2.25cm) node[right] {};
+		\draw[very thick,black](5.5cm,2.25cm) -- (6.5cm,2.25cm) node[right] {};
+		\draw[very thick,black](7cm,2.25cm) -- (8cm,2.25cm) node[right] {};
+		\draw[very thick,black](8.5cm,2.25cm) -- (9.5cm,2.25cm) node[right] {};
+		\draw[very thick,black](10cm,2.25cm) -- (11cm,2.25cm) node[right] {};
+		\draw[very thick,black](11.5cm,2.25cm) -- (12.5cm,2.25cm) node[right] {};
+		\draw[very thick,black](13cm,2.25cm) -- (14cm,2.25cm) node[right] {};
+		\draw[very thick,black](14.5cm,2.25cm) -- (15.5cm,2.25cm) node[right] {};
+		\draw[very thick,black](16cm,2.25cm) -- (17cm,2.25cm) node[right] {};	
+		%small boxes row 2
+		\draw[very thick,black](4cm,1.6cm) -- (5cm,1.6cm) node[right] {};
+		\draw[very thick,black](5.5cm,1.6cm) -- (6.5cm,1.6cm) node[right] {};
+		\draw[very thick,black](7cm,1.6cm) -- (8cm,1.6cm) node[right] {};
+		\draw[very thick,black](8.5cm,1.6cm) -- (9.5cm,1.6cm) node[right] {};
+		\draw[very thick,black](10cm,1.6cm) -- (11cm,1.6cm) node[right] {};
+		\draw[very thick,black](11.5cm,1.6cm) -- (12.5cm,1.6cm) node[right] {};
+		\draw[very thick,black](13cm,1.6cm) -- (14cm,1.6cm) node[right] {};
+		\draw[very thick,black](14.5cm,1.6cm) -- (15.5cm,1.6cm) node[right] {};
+		\draw[very thick,black](16cm,1.6cm) -- (17cm,1.6cm) node[right] {};	
+		%small boxes row 3
+		\draw[very thick,black](4cm,0.8cm) -- (5cm,0.8cm) node[right] {};
+		\draw[very thick,black](5.5cm,0.8cm) -- (6.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](7cm,0.8cm) -- (8cm,0.8cm) node[right] {};
+		\draw[very thick,black](8.5cm,0.8cm) -- (9.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](10cm,0.8cm) -- (11cm,0.8cm) node[right] {};
+		\draw[very thick,black](11.5cm,0.8cm) -- (12.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](13cm,0.8cm) -- (14cm,0.8cm) node[right] {};
+		\draw[very thick,black](14.5cm,0.8cm) -- (15.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](16cm,0.8cm) -- (17cm,0.8cm) node[right] {};	
+		
+		%small boxes row 4
+		\draw[very thick,black](4cm,0.15cm) -- (5cm,0.15cm) node[right] {};
+		\draw[very thick,black](5.5cm,0.15cm) -- (6.5cm,0.15cm) node[right] {};
+		\draw[very thick,black](7cm,0.15cm) -- (8cm,0.15cm) node[right] {};
+		\draw[very thick,black](8.5cm,0.15cm) -- (9.5cm,0.15cm) node[right] {};
+		\draw[very thick,black](10cm,0.15cm) -- (11cm,0.15cm) node[right] {};
+		\draw[very thick,black](11.5cm,0.15cm) -- (12.5cm,0.15cm) node[right] {};
+		\draw[very thick,black](13cm,0.15cm) -- (14cm,0.15cm) node[right] {};
+		\draw[very thick,black](14.5cm,0.15cm) -- (15.5cm,0.15cm) node[right] {};
+		\draw[very thick,black](16cm,0.15cm) -- (17cm,0.15cm) node[right] {};	
+		%small boxes vertical 1
+		\draw[very thick,black](4cm,1.6cm) -- (4cm,2.25cm) node[right] {};
+		\draw[very thick,black](5.5cm,1.6cm) -- (5.5cm,2.25cm) node[right] {};
+		\draw[very thick,black](7cm,1.6cm) -- (7cm,2.25cm) node[right] {};
+		\draw[very thick,black](8.5cm,1.6cm) -- (8.5cm,2.25cm) node[right] {};
+		\draw[very thick,black](10cm,1.6cm) -- (10cm,2.25cm) node[right] {};
+		\draw[very thick,black](11.5cm,1.6cm) -- (11.5cm,2.25cm) node[right] {};
+		\draw[very thick,black](13cm,1.6cm) -- (13cm,2.25cm) node[right] {};
+		\draw[very thick,black](14.5cm,1.6cm) -- (14.5cm,2.25cm) node[right] {};
+		\draw[very thick,black](16cm,1.6cm) -- (16cm,2.25cm) node[right] {};
+		%small boxes vertical 2
+		\draw[very thick,black](5cm,1.6cm) -- (5cm,2.25cm) node[right] {};
+		\draw[very thick,black](6.5cm,1.6cm) -- (6.5cm,2.25cm) node[right] {};
+		\draw[very thick,black](8cm,1.6cm) -- (8cm,2.25cm) node[right] {};
+		\draw[very thick,black](9.5cm,1.6cm) -- (9.5cm,2.25cm) node[right] {};
+		\draw[very thick,black](11cm,1.6cm) -- (11cm,2.25cm) node[right] {};
+		\draw[very thick,black](12.5cm,1.6cm) -- (12.5cm,2.25cm) node[right] {};
+		\draw[very thick,black](14cm,1.6cm) -- (14cm,2.25cm) node[right] {};
+		\draw[very thick,black](15.5cm,1.6cm) -- (15.5cm,2.25cm) node[right] {};
+		\draw[very thick,black](17cm,1.6cm) -- (17cm,2.25cm) node[right] {};
+		
+		%small boxes vertical 3
+		\draw[very thick,black](5cm,0.15cm) -- (5cm,0.8cm) node[right] {};
+		\draw[very thick,black](6.5cm,0.15cm) -- (6.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](8cm,0.15cm) -- (8cm,0.8cm) node[right] {};
+		\draw[very thick,black](9.5cm,0.15cm) -- (9.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](11cm,0.15cm) -- (11cm,0.8cm) node[right] {};
+		\draw[very thick,black](12.5cm,0.15cm) -- (12.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](14cm,0.15cm) -- (14cm,0.8cm) node[right] {};
+		\draw[very thick,black](15.5cm,0.15cm) -- (15.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](17cm,0.15cm) -- (17cm,0.8cm) node[right] {};
+		%small boxes vertical 4
+		\draw[very thick,black](4cm,0.15cm) -- (4cm,0.8cm) node[right] {};
+		\draw[very thick,black](5.5cm,0.15cm) -- (5.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](7cm,0.15cm) -- (7cm,0.8cm) node[right] {};
+		\draw[very thick,black](8.5cm,0.15cm) -- (8.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](10cm,0.15cm) -- (10cm,0.8cm) node[right] {};
+		\draw[very thick,black](11.5cm,0.15cm) -- (11.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](13cm,0.15cm) -- (13cm,0.8cm) node[right] {};
+		\draw[very thick,black](14.5cm,0.15cm) -- (14.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](16cm,0.15cm) -- (16cm,0.8cm) node[right] {};
+		%You receive
+		\draw[black](4.5cm,1.58cm) node[above] {\normalsize\textsf{85}};
+		\draw[black](6cm,1.58cm) node[above] {\normalsize\textsf{74}}; 
+		\draw[black](7.5cm,1.58cm) node[above] {\normalsize\textsf{64}};
+		\draw[black](9cm,1.58cm) node[above] {\normalsize\textsf{53}}; 
+		\draw[black](10.5cm,1.58cm) node[above] {\normalsize\textsf{42}}; 
+		\draw[black](12cm,1.58cm) node[above] {\normalsize\textsf{32}}; 
+		\draw[black](13.5cm,1.58cm) node[above] {\normalsize\textsf{21}};
+		\draw[black](15cm,1.58cm) node[above] {\normalsize\textsf{11}}; 
+		\draw[black](16.5cm,1.58cm) node[above] {\normalsize\textsf{0}}; 	
+		%Other receives
+		\draw[black](4.5cm,0.12cm) node[above] {\normalsize\textsf{15}};
+		\draw[black](6cm,0.12cm) node[above] {\normalsize\textsf{19}}; 
+		\draw[black](7.5cm,0.12cm) node[above] {\normalsize\textsf{24}};
+		\draw[black](9cm,0.12cm) node[above] {\normalsize\textsf{28}}; 
+		\draw[black](10.5cm,0.12cm) node[above] {\normalsize\textsf{33}}; 
+		\draw[black](12cm,0.12cm) node[above] {\normalsize\textsf{37}}; 
+		\draw[black](13.5cm,0.12cm) node[above] {\normalsize\textsf{41}};
+		\draw[black](15cm,0.12cm) node[above] {\normalsize\textsf{46}}; 
+		\draw[black](16.5cm,0.12cm) node[above] {\normalsize\textsf{50}}; 
+	\end{tikzpicture}
+     \medskip
+    \begin{tikzpicture}
+    \end{tikzpicture}	
+	\begin{tikzpicture}[scale=0.8,every shadow/.style={opacity=0.2,fill=gray!50!white}]]{helvet}%item6
+		%box
+		\filldraw[drop shadow,fill=white](0cm,0cm) -- (17.7cm,0cm)-- (17.7cm,2.4cm)-- (0cm,2.4cm)-- (0cm,0cm) node[right] {};
+	
+	%Text
+	\draw[black,thick](0.7cm,1.75cm) node[right,scale=0.8] {\large\textsf{You receive}};
+	\draw[black,thick](0.45cm,0.4cm) node[right,scale=0.8] {\large\textsf{Other receives}};
+	
+	%Answer
+	\draw[very thick,black](17.9cm,0.4cm) -- (20.5cm,0.4cm) node[right] {};
+	\draw[very thick,black](17.9cm,1.4cm) -- (20.5cm,1.4cm) node[right] {};
+	\draw[black,thick](17.8,1.6) node[right,scale=0.8] {\small\textsf{You}};
+	\draw[black,thick](17.8,0.6) node[right,scale=0.8] {\small\textsf{Other}};
+	
+	%Slider
+	\draw[very thick,black](4.5cm,1.2cm) -- (16.5cm,1.2cm) node[right] {};
+	\draw[very thick,black](4.5cm,0.9cm) -- (4.5cm,1.5cm) node[right] {};
+	\draw[very thick,black](6cm,0.9cm) -- (6cm,1.5cm) node[right] {};
+	\draw[very thick,black](7.5cm,0.9cm) -- (7.5cm,1.5cm) node[right] {};
+	\draw[very thick,black](9cm,0.9cm) -- (9cm,1.5cm) node[right] {};
+	\draw[very thick,black](10.5cm,0.9cm) -- (10.5cm,1.5cm) node[right] {};
+	\draw[very thick,black](12cm,0.9cm) -- (12cm,1.5cm) node[right] {};
+	\draw[very thick,black](13.5cm,0.9cm) -- (13.5cm,1.5cm) node[right] {};
+	\draw[very thick,black](15cm,0.9cm) -- (15cm,1.5cm) node[right] {};
+	\draw[very thick,black](16.5cm,0.9cm) -- (16.5cm,1.5cm) node[right] {};
+	%Gray
+	\draw[thick,gray](5.25cm,1cm) -- (5.25cm,1.4cm) node[right] {};
+	\draw[thick,gray](6.75cm,1cm) -- (6.75cm,1.4cm) node[right] {};
+	\draw[thick,gray](8.25cm,1cm) -- (8.25cm,1.4cm) node[right] {};
+	\draw[thick,gray](9.75cm,1cm) -- (9.75cm,1.4cm) node[right] {};
+	\draw[thick,gray](11.25cm,1cm) -- (11.25cm,1.4cm) node[right] {};
+	\draw[thick,gray](12.75cm,1cm) -- (12.75cm,1.4cm) node[right] {};
+	\draw[thick,gray](14.25cm,1cm) -- (14.25cm,1.4cm) node[right] {};
+	\draw[thick,gray](15.75cm,1cm) -- (15.75cm,1.4cm) node[right] {};
+	%small boxes row 1
+	\draw[very thick,black](4cm,2.25cm) -- (5cm,2.25cm) node[right] {};
+	\draw[very thick,black](5.5cm,2.25cm) -- (6.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](7cm,2.25cm) -- (8cm,2.25cm) node[right] {};
+	\draw[very thick,black](8.5cm,2.25cm) -- (9.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](10cm,2.25cm) -- (11cm,2.25cm) node[right] {};
+	\draw[very thick,black](11.5cm,2.25cm) -- (12.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](13cm,2.25cm) -- (14cm,2.25cm) node[right] {};
+	\draw[very thick,black](14.5cm,2.25cm) -- (15.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](16cm,2.25cm) -- (17cm,2.25cm) node[right] {};	
+	%small boxes row 2
+	\draw[very thick,black](4cm,1.6cm) -- (5cm,1.6cm) node[right] {};
+	\draw[very thick,black](5.5cm,1.6cm) -- (6.5cm,1.6cm) node[right] {};
+	\draw[very thick,black](7cm,1.6cm) -- (8cm,1.6cm) node[right] {};
+	\draw[very thick,black](8.5cm,1.6cm) -- (9.5cm,1.6cm) node[right] {};
+	\draw[very thick,black](10cm,1.6cm) -- (11cm,1.6cm) node[right] {};
+	\draw[very thick,black](11.5cm,1.6cm) -- (12.5cm,1.6cm) node[right] {};
+	\draw[very thick,black](13cm,1.6cm) -- (14cm,1.6cm) node[right] {};
+	\draw[very thick,black](14.5cm,1.6cm) -- (15.5cm,1.6cm) node[right] {};
+	\draw[very thick,black](16cm,1.6cm) -- (17cm,1.6cm) node[right] {};	
+	%small boxes row 3
+	\draw[very thick,black](4cm,0.8cm) -- (5cm,0.8cm) node[right] {};
+	\draw[very thick,black](5.5cm,0.8cm) -- (6.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](7cm,0.8cm) -- (8cm,0.8cm) node[right] {};
+	\draw[very thick,black](8.5cm,0.8cm) -- (9.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](10cm,0.8cm) -- (11cm,0.8cm) node[right] {};
+	\draw[very thick,black](11.5cm,0.8cm) -- (12.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](13cm,0.8cm) -- (14cm,0.8cm) node[right] {};
+	\draw[very thick,black](14.5cm,0.8cm) -- (15.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](16cm,0.8cm) -- (17cm,0.8cm) node[right] {};	
+	
+	%small boxes row 4
+	\draw[very thick,black](4cm,0.15cm) -- (5cm,0.15cm) node[right] {};
+	\draw[very thick,black](5.5cm,0.15cm) -- (6.5cm,0.15cm) node[right] {};
+	\draw[very thick,black](7cm,0.15cm) -- (8cm,0.15cm) node[right] {};
+	\draw[very thick,black](8.5cm,0.15cm) -- (9.5cm,0.15cm) node[right] {};
+	\draw[very thick,black](10cm,0.15cm) -- (11cm,0.15cm) node[right] {};
+	\draw[very thick,black](11.5cm,0.15cm) -- (12.5cm,0.15cm) node[right] {};
+	\draw[very thick,black](13cm,0.15cm) -- (14cm,0.15cm) node[right] {};
+	\draw[very thick,black](14.5cm,0.15cm) -- (15.5cm,0.15cm) node[right] {};
+	\draw[very thick,black](16cm,0.15cm) -- (17cm,0.15cm) node[right] {};	
+	%small boxes vertical 1
+	\draw[very thick,black](4cm,1.6cm) -- (4cm,2.25cm) node[right] {};
+	\draw[very thick,black](5.5cm,1.6cm) -- (5.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](7cm,1.6cm) -- (7cm,2.25cm) node[right] {};
+	\draw[very thick,black](8.5cm,1.6cm) -- (8.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](10cm,1.6cm) -- (10cm,2.25cm) node[right] {};
+	\draw[very thick,black](11.5cm,1.6cm) -- (11.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](13cm,1.6cm) -- (13cm,2.25cm) node[right] {};
+	\draw[very thick,black](14.5cm,1.6cm) -- (14.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](16cm,1.6cm) -- (16cm,2.25cm) node[right] {};
+	%small boxes vertical 2
+	\draw[very thick,black](5cm,1.6cm) -- (5cm,2.25cm) node[right] {};
+	\draw[very thick,black](6.5cm,1.6cm) -- (6.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](8cm,1.6cm) -- (8cm,2.25cm) node[right] {};
+	\draw[very thick,black](9.5cm,1.6cm) -- (9.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](11cm,1.6cm) -- (11cm,2.25cm) node[right] {};
+	\draw[very thick,black](12.5cm,1.6cm) -- (12.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](14cm,1.6cm) -- (14cm,2.25cm) node[right] {};
+	\draw[very thick,black](15.5cm,1.6cm) -- (15.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](17cm,1.6cm) -- (17cm,2.25cm) node[right] {};
+	
+	%small boxes vertical 3
+	\draw[very thick,black](5cm,0.15cm) -- (5cm,0.8cm) node[right] {};
+	\draw[very thick,black](6.5cm,0.15cm) -- (6.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](8cm,0.15cm) -- (8cm,0.8cm) node[right] {};
+	\draw[very thick,black](9.5cm,0.15cm) -- (9.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](11cm,0.15cm) -- (11cm,0.8cm) node[right] {};
+	\draw[very thick,black](12.5cm,0.15cm) -- (12.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](14cm,0.15cm) -- (14cm,0.8cm) node[right] {};
+	\draw[very thick,black](15.5cm,0.15cm) -- (15.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](17cm,0.15cm) -- (17cm,0.8cm) node[right] {};
+	%small boxes vertical 4
+	\draw[very thick,black](4cm,0.15cm) -- (4cm,0.8cm) node[right] {};
+	\draw[very thick,black](5.5cm,0.15cm) -- (5.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](7cm,0.15cm) -- (7cm,0.8cm) node[right] {};
+	\draw[very thick,black](8.5cm,0.15cm) -- (8.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](10cm,0.15cm) -- (10cm,0.8cm) node[right] {};
+	\draw[very thick,black](11.5cm,0.15cm) -- (11.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](13cm,0.15cm) -- (13cm,0.8cm) node[right] {};
+	\draw[very thick,black](14.5cm,0.15cm) -- (14.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](16cm,0.15cm) -- (16cm,0.8cm) node[right] {};
+	%You receive
+	\draw[black](4.5cm,1.58cm) node[above] {\normalsize\textsf{0}};
+	\draw[black](6cm,1.58cm) node[above] {\normalsize\textsf{9}}; 
+	\draw[black](7.5cm,1.58cm) node[above] {\normalsize\textsf{20}};
+	\draw[black](9cm,1.58cm) node[above] {\normalsize\textsf{32}}; 
+	\draw[black](10.5cm,1.58cm) node[above] {\normalsize\textsf{43}}; 
+	\draw[black](12cm,1.58cm) node[above] {\normalsize\textsf{54}}; 
+	\draw[black](13.5cm,1.58cm) node[above] {\normalsize\textsf{64}};
+	\draw[black](15cm,1.58cm) node[above] {\normalsize\textsf{75}}; 
+	\draw[black](16.5cm,1.58cm) node[above] {\normalsize\textsf{85}}; 	
+	%Other receives
+	\draw[black](4.5cm,0.12cm) node[above] {\normalsize\textsf{50}};
+	\draw[black](6cm,0.12cm) node[above] {\normalsize\textsf{54}}; 
+	\draw[black](7.5cm,0.12cm) node[above] {\normalsize\textsf{58}};
+	\draw[black](9cm,0.12cm) node[above] {\normalsize\textsf{63}}; 
+	\draw[black](10.5cm,0.12cm) node[above] {\normalsize\textsf{68}}; 
+	\draw[black](12cm,0.12cm) node[above] {\normalsize\textsf{72}}; 
+	\draw[black](13.5cm,0.12cm) node[above] {\normalsize\textsf{76}};
+	\draw[black](15cm,0.12cm) node[above] {\normalsize\textsf{81}}; 
+	\draw[black](16.5cm,0.12cm) node[above] {\normalsize\textsf{85}}; 
+	\end{tikzpicture}
+     \medskip
+    \begin{tikzpicture}
+    \end{tikzpicture}	
+	\begin{tikzpicture}[scale=0.8,every shadow/.style={opacity=0.2,fill=gray!50!white}]]{helvet}%item7
+		%box
+		\filldraw[drop shadow,fill=white](0cm,0cm) -- (17.7cm,0cm)-- (17.7cm,2.4cm)-- (0cm,2.4cm)-- (0cm,0cm) node[right] {};
+		
+		%Text
+		\draw[black,thick](0.7cm,1.75cm) node[right,scale=0.8] {\large\textsf{You receive}};
+		\draw[black,thick](0.45cm,0.4cm) node[right,scale=0.8] {\large\textsf{Other receives}};
+		
+		%Answer
+		\draw[very thick,black](17.9cm,0.4cm) -- (20.5cm,0.4cm) node[right] {};
+		\draw[very thick,black](17.9cm,1.4cm) -- (20.5cm,1.4cm) node[right] {};
+		\draw[black,thick](17.8,1.6) node[right,scale=0.8] {\small\textsf{You}};
+		\draw[black,thick](17.8,0.6) node[right,scale=0.8] {\small\textsf{Other}};
+		
+		%Slider
+		\draw[very thick,black](4.5cm,1.2cm) -- (16.5cm,1.2cm) node[right] {};
+		\draw[very thick,black](4.5cm,0.9cm) -- (4.5cm,1.5cm) node[right] {};
+		\draw[very thick,black](6cm,0.9cm) -- (6cm,1.5cm) node[right] {};
+		\draw[very thick,black](7.5cm,0.9cm) -- (7.5cm,1.5cm) node[right] {};
+		\draw[very thick,black](9cm,0.9cm) -- (9cm,1.5cm) node[right] {};
+		\draw[very thick,black](10.5cm,0.9cm) -- (10.5cm,1.5cm) node[right] {};
+		\draw[very thick,black](12cm,0.9cm) -- (12cm,1.5cm) node[right] {};
+		\draw[very thick,black](13.5cm,0.9cm) -- (13.5cm,1.5cm) node[right] {};
+		\draw[very thick,black](15cm,0.9cm) -- (15cm,1.5cm) node[right] {};
+		\draw[very thick,black](16.5cm,0.9cm) -- (16.5cm,1.5cm) node[right] {};
+		%Gray
+		\draw[thick,gray](5.25cm,1cm) -- (5.25cm,1.4cm) node[right] {};
+		\draw[thick,gray](6.75cm,1cm) -- (6.75cm,1.4cm) node[right] {};
+		\draw[thick,gray](8.25cm,1cm) -- (8.25cm,1.4cm) node[right] {};
+		\draw[thick,gray](9.75cm,1cm) -- (9.75cm,1.4cm) node[right] {};
+		\draw[thick,gray](11.25cm,1cm) -- (11.25cm,1.4cm) node[right] {};
+		\draw[thick,gray](12.75cm,1cm) -- (12.75cm,1.4cm) node[right] {};
+		\draw[thick,gray](14.25cm,1cm) -- (14.25cm,1.4cm) node[right] {};
+		\draw[thick,gray](15.75cm,1cm) -- (15.75cm,1.4cm) node[right] {};
+		%small boxes row 1
+		\draw[very thick,black](4cm,2.25cm) -- (5cm,2.25cm) node[right] {};
+		\draw[very thick,black](5.5cm,2.25cm) -- (6.5cm,2.25cm) node[right] {};
+		\draw[very thick,black](7cm,2.25cm) -- (8cm,2.25cm) node[right] {};
+		\draw[very thick,black](8.5cm,2.25cm) -- (9.5cm,2.25cm) node[right] {};
+		\draw[very thick,black](10cm,2.25cm) -- (11cm,2.25cm) node[right] {};
+		\draw[very thick,black](11.5cm,2.25cm) -- (12.5cm,2.25cm) node[right] {};
+		\draw[very thick,black](13cm,2.25cm) -- (14cm,2.25cm) node[right] {};
+		\draw[very thick,black](14.5cm,2.25cm) -- (15.5cm,2.25cm) node[right] {};
+		\draw[very thick,black](16cm,2.25cm) -- (17cm,2.25cm) node[right] {};	
+		%small boxes row 2
+		\draw[very thick,black](4cm,1.6cm) -- (5cm,1.6cm) node[right] {};
+		\draw[very thick,black](5.5cm,1.6cm) -- (6.5cm,1.6cm) node[right] {};
+		\draw[very thick,black](7cm,1.6cm) -- (8cm,1.6cm) node[right] {};
+		\draw[very thick,black](8.5cm,1.6cm) -- (9.5cm,1.6cm) node[right] {};
+		\draw[very thick,black](10cm,1.6cm) -- (11cm,1.6cm) node[right] {};
+		\draw[very thick,black](11.5cm,1.6cm) -- (12.5cm,1.6cm) node[right] {};
+		\draw[very thick,black](13cm,1.6cm) -- (14cm,1.6cm) node[right] {};
+		\draw[very thick,black](14.5cm,1.6cm) -- (15.5cm,1.6cm) node[right] {};
+		\draw[very thick,black](16cm,1.6cm) -- (17cm,1.6cm) node[right] {};	
+		%small boxes row 3
+		\draw[very thick,black](4cm,0.8cm) -- (5cm,0.8cm) node[right] {};
+		\draw[very thick,black](5.5cm,0.8cm) -- (6.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](7cm,0.8cm) -- (8cm,0.8cm) node[right] {};
+		\draw[very thick,black](8.5cm,0.8cm) -- (9.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](10cm,0.8cm) -- (11cm,0.8cm) node[right] {};
+		\draw[very thick,black](11.5cm,0.8cm) -- (12.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](13cm,0.8cm) -- (14cm,0.8cm) node[right] {};
+		\draw[very thick,black](14.5cm,0.8cm) -- (15.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](16cm,0.8cm) -- (17cm,0.8cm) node[right] {};	
+		
+		%small boxes row 4
+		\draw[very thick,black](4cm,0.15cm) -- (5cm,0.15cm) node[right] {};
+		\draw[very thick,black](5.5cm,0.15cm) -- (6.5cm,0.15cm) node[right] {};
+		\draw[very thick,black](7cm,0.15cm) -- (8cm,0.15cm) node[right] {};
+		\draw[very thick,black](8.5cm,0.15cm) -- (9.5cm,0.15cm) node[right] {};
+		\draw[very thick,black](10cm,0.15cm) -- (11cm,0.15cm) node[right] {};
+		\draw[very thick,black](11.5cm,0.15cm) -- (12.5cm,0.15cm) node[right] {};
+		\draw[very thick,black](13cm,0.15cm) -- (14cm,0.15cm) node[right] {};
+		\draw[very thick,black](14.5cm,0.15cm) -- (15.5cm,0.15cm) node[right] {};
+		\draw[very thick,black](16cm,0.15cm) -- (17cm,0.15cm) node[right] {};	
+		%small boxes vertical 1
+		\draw[very thick,black](4cm,1.6cm) -- (4cm,2.25cm) node[right] {};
+		\draw[very thick,black](5.5cm,1.6cm) -- (5.5cm,2.25cm) node[right] {};
+		\draw[very thick,black](7cm,1.6cm) -- (7cm,2.25cm) node[right] {};
+		\draw[very thick,black](8.5cm,1.6cm) -- (8.5cm,2.25cm) node[right] {};
+		\draw[very thick,black](10cm,1.6cm) -- (10cm,2.25cm) node[right] {};
+		\draw[very thick,black](11.5cm,1.6cm) -- (11.5cm,2.25cm) node[right] {};
+		\draw[very thick,black](13cm,1.6cm) -- (13cm,2.25cm) node[right] {};
+		\draw[very thick,black](14.5cm,1.6cm) -- (14.5cm,2.25cm) node[right] {};
+		\draw[very thick,black](16cm,1.6cm) -- (16cm,2.25cm) node[right] {};
+		%small boxes vertical 2
+		\draw[very thick,black](5cm,1.6cm) -- (5cm,2.25cm) node[right] {};
+		\draw[very thick,black](6.5cm,1.6cm) -- (6.5cm,2.25cm) node[right] {};
+		\draw[very thick,black](8cm,1.6cm) -- (8cm,2.25cm) node[right] {};
+		\draw[very thick,black](9.5cm,1.6cm) -- (9.5cm,2.25cm) node[right] {};
+		\draw[very thick,black](11cm,1.6cm) -- (11cm,2.25cm) node[right] {};
+		\draw[very thick,black](12.5cm,1.6cm) -- (12.5cm,2.25cm) node[right] {};
+		\draw[very thick,black](14cm,1.6cm) -- (14cm,2.25cm) node[right] {};
+		\draw[very thick,black](15.5cm,1.6cm) -- (15.5cm,2.25cm) node[right] {};
+		\draw[very thick,black](17cm,1.6cm) -- (17cm,2.25cm) node[right] {};
+		
+		%small boxes vertical 3
+		\draw[very thick,black](5cm,0.15cm) -- (5cm,0.8cm) node[right] {};
+		\draw[very thick,black](6.5cm,0.15cm) -- (6.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](8cm,0.15cm) -- (8cm,0.8cm) node[right] {};
+		\draw[very thick,black](9.5cm,0.15cm) -- (9.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](11cm,0.15cm) -- (11cm,0.8cm) node[right] {};
+		\draw[very thick,black](12.5cm,0.15cm) -- (12.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](14cm,0.15cm) -- (14cm,0.8cm) node[right] {};
+		\draw[very thick,black](15.5cm,0.15cm) -- (15.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](17cm,0.15cm) -- (17cm,0.8cm) node[right] {};
+		%small boxes vertical 4
+		\draw[very thick,black](4cm,0.15cm) -- (4cm,0.8cm) node[right] {};
+		\draw[very thick,black](5.5cm,0.15cm) -- (5.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](7cm,0.15cm) -- (7cm,0.8cm) node[right] {};
+		\draw[very thick,black](8.5cm,0.15cm) -- (8.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](10cm,0.15cm) -- (10cm,0.8cm) node[right] {};
+		\draw[very thick,black](11.5cm,0.15cm) -- (11.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](13cm,0.15cm) -- (13cm,0.8cm) node[right] {};
+		\draw[very thick,black](14.5cm,0.15cm) -- (14.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](16cm,0.15cm) -- (16cm,0.8cm) node[right] {};
+		%You receive
+		\draw[black](4.5cm,1.58cm) node[above] {\normalsize\textsf{50}};
+		\draw[black](6cm,1.58cm) node[above] {\normalsize\textsf{46}}; 
+		\draw[black](7.5cm,1.58cm) node[above] {\normalsize\textsf{41}};
+		\draw[black](9cm,1.58cm) node[above] {\normalsize\textsf{37}}; 
+		\draw[black](10.5cm,1.58cm) node[above] {\normalsize\textsf{33}}; 
+		\draw[black](12cm,1.58cm) node[above] {\normalsize\textsf{28}}; 
+		\draw[black](13.5cm,1.58cm) node[above] {\normalsize\textsf{24}};
+		\draw[black](15cm,1.58cm) node[above] {\normalsize\textsf{20}}; 
+		\draw[black](16.5cm,1.58cm) node[above] {\normalsize\textsf{15}}; 	
+		%Other receives
+		\draw[black](4.5cm,0.12cm) node[above] {\normalsize\textsf{0}};
+		\draw[black](6cm,0.12cm) node[above] {\normalsize\textsf{11}}; 
+		\draw[black](7.5cm,0.12cm) node[above] {\normalsize\textsf{21}};
+		\draw[black](9cm,0.12cm) node[above] {\normalsize\textsf{32}}; 
+		\draw[black](10.5cm,0.12cm) node[above] {\normalsize\textsf{42}}; 
+		\draw[black](12cm,0.12cm) node[above] {\normalsize\textsf{53}}; 
+		\draw[black](13.5cm,0.12cm) node[above] {\normalsize\textsf{64}};
+		\draw[black](15cm,0.12cm) node[above] {\normalsize\textsf{74}}; 
+		\draw[black](16.5cm,0.12cm) node[above] {\normalsize\textsf{85}}; 
+	\end{tikzpicture}
+     \medskip
+    \begin{tikzpicture}
+    \end{tikzpicture}	
+	\begin{tikzpicture}[scale=0.8,every shadow/.style={opacity=0.2,fill=gray!50!white}]]{helvet}%item8
+		%box
+		\filldraw[drop shadow,fill=white](0cm,0cm) -- (17.7cm,0cm)-- (17.7cm,2.4cm)-- (0cm,2.4cm)-- (0cm,0cm) node[right] {};
+	
+	%Text
+	\draw[black,thick](0.7cm,1.75cm) node[right,scale=0.8] {\large\textsf{You receive}};
+	\draw[black,thick](0.45cm,0.4cm) node[right,scale=0.8] {\large\textsf{Other receives}};
+	
+	%Answer
+	\draw[very thick,,black](17.9cm,0.4cm) -- (20.5cm,0.4cm) node[right] {};
+	\draw[very thick,,black](17.9cm,1.4cm) -- (20.5cm,1.4cm) node[right] {};
+	\draw[black,thick](17.8,1.6) node[right,scale=0.8] {\small\textsf{You}};
+	\draw[black,thick](17.8,0.6) node[right,scale=0.8] {\small\textsf{Other}};
+	
+	%Slider
+	\draw[very thick,black](4.5cm,1.2cm) -- (16.5cm,1.2cm) node[right] {};
+	\draw[very thick,black](4.5cm,0.9cm) -- (4.5cm,1.5cm) node[right] {};
+	\draw[very thick,black](6cm,0.9cm) -- (6cm,1.5cm) node[right] {};
+	\draw[very thick,black](7.5cm,0.9cm) -- (7.5cm,1.5cm) node[right] {};
+	\draw[very thick,black](9cm,0.9cm) -- (9cm,1.5cm) node[right] {};
+	\draw[very thick,black](10.5cm,0.9cm) -- (10.5cm,1.5cm) node[right] {};
+	\draw[very thick,black](12cm,0.9cm) -- (12cm,1.5cm) node[right] {};
+	\draw[very thick,black](13.5cm,0.9cm) -- (13.5cm,1.5cm) node[right] {};
+	\draw[very thick,black](15cm,0.9cm) -- (15cm,1.5cm) node[right] {};
+	\draw[very thick,black](16.5cm,0.9cm) -- (16.5cm,1.5cm) node[right] {};
+	%Gray
+	\draw[thick,gray](5.25cm,1cm) -- (5.25cm,1.4cm) node[right] {};
+	\draw[thick,gray](6.75cm,1cm) -- (6.75cm,1.4cm) node[right] {};
+	\draw[thick,gray](8.25cm,1cm) -- (8.25cm,1.4cm) node[right] {};
+	\draw[thick,gray](9.75cm,1cm) -- (9.75cm,1.4cm) node[right] {};
+	\draw[thick,gray](11.25cm,1cm) -- (11.25cm,1.4cm) node[right] {};
+	\draw[thick,gray](12.75cm,1cm) -- (12.75cm,1.4cm) node[right] {};
+	\draw[thick,gray](14.25cm,1cm) -- (14.25cm,1.4cm) node[right] {};
+	\draw[thick,gray](15.75cm,1cm) -- (15.75cm,1.4cm) node[right] {};
+	%small boxes row 1
+	\draw[very thick,black](4cm,2.25cm) -- (5cm,2.25cm) node[right] {};
+	\draw[very thick,black](5.5cm,2.25cm) -- (6.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](7cm,2.25cm) -- (8cm,2.25cm) node[right] {};
+	\draw[very thick,black](8.5cm,2.25cm) -- (9.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](10cm,2.25cm) -- (11cm,2.25cm) node[right] {};
+	\draw[very thick,black](11.5cm,2.25cm) -- (12.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](13cm,2.25cm) -- (14cm,2.25cm) node[right] {};
+	\draw[very thick,black](14.5cm,2.25cm) -- (15.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](16cm,2.25cm) -- (17cm,2.25cm) node[right] {};	
+	%small boxes row 2
+	\draw[very thick,black](4cm,1.6cm) -- (5cm,1.6cm) node[right] {};
+	\draw[very thick,black](5.5cm,1.6cm) -- (6.5cm,1.6cm) node[right] {};
+	\draw[very thick,black](7cm,1.6cm) -- (8cm,1.6cm) node[right] {};
+	\draw[very thick,black](8.5cm,1.6cm) -- (9.5cm,1.6cm) node[right] {};
+	\draw[very thick,black](10cm,1.6cm) -- (11cm,1.6cm) node[right] {};
+	\draw[very thick,black](11.5cm,1.6cm) -- (12.5cm,1.6cm) node[right] {};
+	\draw[very thick,black](13cm,1.6cm) -- (14cm,1.6cm) node[right] {};
+	\draw[very thick,black](14.5cm,1.6cm) -- (15.5cm,1.6cm) node[right] {};
+	\draw[very thick,black](16cm,1.6cm) -- (17cm,1.6cm) node[right] {};	
+	%small boxes row 3
+	\draw[very thick,black](4cm,0.8cm) -- (5cm,0.8cm) node[right] {};
+	\draw[very thick,black](5.5cm,0.8cm) -- (6.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](7cm,0.8cm) -- (8cm,0.8cm) node[right] {};
+	\draw[very thick,black](8.5cm,0.8cm) -- (9.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](10cm,0.8cm) -- (11cm,0.8cm) node[right] {};
+	\draw[very thick,black](11.5cm,0.8cm) -- (12.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](13cm,0.8cm) -- (14cm,0.8cm) node[right] {};
+	\draw[very thick,black](14.5cm,0.8cm) -- (15.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](16cm,0.8cm) -- (17cm,0.8cm) node[right] {};	
+	
+	%small boxes row 4
+	\draw[very thick,black](4cm,0.15cm) -- (5cm,0.15cm) node[right] {};
+	\draw[very thick,black](5.5cm,0.15cm) -- (6.5cm,0.15cm) node[right] {};
+	\draw[very thick,black](7cm,0.15cm) -- (8cm,0.15cm) node[right] {};
+	\draw[very thick,black](8.5cm,0.15cm) -- (9.5cm,0.15cm) node[right] {};
+	\draw[very thick,black](10cm,0.15cm) -- (11cm,0.15cm) node[right] {};
+	\draw[very thick,black](11.5cm,0.15cm) -- (12.5cm,0.15cm) node[right] {};
+	\draw[very thick,black](13cm,0.15cm) -- (14cm,0.15cm) node[right] {};
+	\draw[very thick,black](14.5cm,0.15cm) -- (15.5cm,0.15cm) node[right] {};
+	\draw[very thick,black](16cm,0.15cm) -- (17cm,0.15cm) node[right] {};	
+	%small boxes vertical 1
+	\draw[very thick,black](4cm,1.6cm) -- (4cm,2.25cm) node[right] {};
+	\draw[very thick,black](5.5cm,1.6cm) -- (5.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](7cm,1.6cm) -- (7cm,2.25cm) node[right] {};
+	\draw[very thick,black](8.5cm,1.6cm) -- (8.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](10cm,1.6cm) -- (10cm,2.25cm) node[right] {};
+	\draw[very thick,black](11.5cm,1.6cm) -- (11.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](13cm,1.6cm) -- (13cm,2.25cm) node[right] {};
+	\draw[very thick,black](14.5cm,1.6cm) -- (14.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](16cm,1.6cm) -- (16cm,2.25cm) node[right] {};
+	%small boxes vertical 2
+	\draw[very thick,black](5cm,1.6cm) -- (5cm,2.25cm) node[right] {};
+	\draw[very thick,black](6.5cm,1.6cm) -- (6.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](8cm,1.6cm) -- (8cm,2.25cm) node[right] {};
+	\draw[very thick,black](9.5cm,1.6cm) -- (9.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](11cm,1.6cm) -- (11cm,2.25cm) node[right] {};
+	\draw[very thick,black](12.5cm,1.6cm) -- (12.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](14cm,1.6cm) -- (14cm,2.25cm) node[right] {};
+	\draw[very thick,black](15.5cm,1.6cm) -- (15.5cm,2.25cm) node[right] {};
+	\draw[very thick,black](17cm,1.6cm) -- (17cm,2.25cm) node[right] {};
+	
+	%small boxes vertical 3
+	\draw[very thick,black](5cm,0.15cm) -- (5cm,0.8cm) node[right] {};
+	\draw[very thick,black](6.5cm,0.15cm) -- (6.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](8cm,0.15cm) -- (8cm,0.8cm) node[right] {};
+	\draw[very thick,black](9.5cm,0.15cm) -- (9.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](11cm,0.15cm) -- (11cm,0.8cm) node[right] {};
+	\draw[very thick,black](12.5cm,0.15cm) -- (12.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](14cm,0.15cm) -- (14cm,0.8cm) node[right] {};
+	\draw[very thick,black](15.5cm,0.15cm) -- (15.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](17cm,0.15cm) -- (17cm,0.8cm) node[right] {};
+	%small boxes vertical 4
+	\draw[very thick,black](4cm,0.15cm) -- (4cm,0.8cm) node[right] {};
+	\draw[very thick,black](5.5cm,0.15cm) -- (5.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](7cm,0.15cm) -- (7cm,0.8cm) node[right] {};
+	\draw[very thick,black](8.5cm,0.15cm) -- (8.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](10cm,0.15cm) -- (10cm,0.8cm) node[right] {};
+	\draw[very thick,black](11.5cm,0.15cm) -- (11.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](13cm,0.15cm) -- (13cm,0.8cm) node[right] {};
+	\draw[very thick,black](14.5cm,0.15cm) -- (14.5cm,0.8cm) node[right] {};
+	\draw[very thick,black](16cm,0.15cm) -- (16cm,0.8cm) node[right] {};
+	%You receive
+	\draw[black](4.5cm,1.58cm) node[above] {\normalsize\textsf{50}};
+	\draw[black](6cm,1.58cm) node[above] {\normalsize\textsf{45}}; 
+	\draw[black](7.5cm,1.58cm) node[above] {\normalsize\textsf{41}};
+	\draw[black](9cm,1.58cm) node[above] {\normalsize\textsf{37}}; 
+	\draw[black](10.5cm,1.58cm) node[above] {\normalsize\textsf{33}}; 
+	\draw[black](12cm,1.58cm) node[above] {\normalsize\textsf{28}}; 
+	\draw[black](13.5cm,1.58cm) node[above] {\normalsize\textsf{24}};
+	\draw[black](15cm,1.58cm) node[above] {\normalsize\textsf{19}}; 
+	\draw[black](16.5cm,1.58cm) node[above] {\normalsize\textsf{15}}; 	
+	%Other receives
+	\draw[black](4.5cm,0.12cm) node[above] {\normalsize\textsf{100}};
+	\draw[black](6cm,0.12cm) node[above] {\normalsize\textsf{89}}; 
+	\draw[black](7.5cm,0.12cm) node[above] {\normalsize\textsf{79}};
+	\draw[black](9cm,0.12cm) node[above] {\normalsize\textsf{68}}; 
+	\draw[black](10.5cm,0.12cm) node[above] {\normalsize\textsf{58}}; 
+	\draw[black](12cm,0.12cm) node[above] {\normalsize\textsf{47}}; 
+	\draw[black](13.5cm,0.12cm) node[above] {\normalsize\textsf{36}};
+	\draw[black](15cm,0.12cm) node[above] {\normalsize\textsf{26}}; 
+	\draw[black](16.5cm,0.12cm) node[above] {\normalsize\textsf{15}}; 
+	\end{tikzpicture}
+\end{figure}
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Items of the Star Measure 360
+
+\begin{figure}[h]
+	\centering	
+	\begin{tikzpicture}[scale=0.8,every shadow/.style={opacity=0.2,fill=gray!50!white}]]{helvet}%item1
+		
+		%box
+		\filldraw[drop shadow,fill=white](0cm,0cm) -- (14.4cm,0cm)-- (14.4cm,2.5cm)-- (0cm,2.5cm)-- (0cm,0cm) node[right] {};
+		
+		%text
+		\draw[black,thick](0.5,2cm) node[right,scale=0.8] {\large\textsf{You receive}};
+		\draw[black,thick](0.3,0.55) node[right,scale=0.8] {\large\textsf{Other receives}};
+		
+		%answer
+		\draw[very thick,black](14.9cm,0.2cm) -- (18cm,0.2cm) node[right] {};
+		\draw[very thick,black](14.9cm,1.2cm) -- (18cm,1.2cm) node[right] {};
+		\draw[black,thick](14.75,1.45) node[right,scale=0.8] {\normalsize\textsf{You}};
+		\draw[black,thick](14.75,0.45) node[right,scale=0.8] {\normalsize\textsf{Other}};
+		
+		%slider
+		\draw[very thick,black](4.75cm,1.25cm) -- (12.75cm,1.25cm) node[right] {};
+		\draw[very thick,black](4.75cm,0.9cm) -- (4.75cm,1.6cm) node[right] {};
+		\draw[very thick,black](6.75cm,0.9cm) -- (6.75cm,1.6cm) node[right] {};
+		\draw[very thick,black](8.75cm,0.9cm) -- (8.75cm,1.6cm) node[right] {};
+		\draw[very thick,black](10.75cm,0.9cm) -- (10.75cm,1.6cm) node[right] {};
+		\draw[very thick,black](12.75cm,0.9cm) -- (12.75cm,1.6cm) node[right] {};
+		%gray
+		\draw[thick,gray](5.75cm,1cm) -- (5.75cm,1.5cm) node[right] {};
+		\draw[thick,gray](7.75cm,1cm) -- (7.75cm,1.5cm) node[right] {};
+		\draw[thick,gray](9.75cm,1cm) -- (9.75cm,1.5cm) node[right] {};
+		\draw[thick,gray](11.75cm,1cm) -- (11.75cm,1.5cm) node[right] {};
+	
+		
+		%small boxes row 1
+		\draw[very thick,black](4cm,2.35cm) -- (5.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](6cm,2.35cm) -- (7.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](8cm,2.35cm) -- (9.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](10cm,2.35cm) -- (11.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](12cm,2.35cm) -- (13.5cm,2.35cm) node[right] {};
+		%small boxes row 2
+		\draw[very thick,black](4cm,1.7cm) -- (5.5cm,1.7cm) node[right] {};
+		\draw[very thick,black](6cm,1.7cm) -- (7.5cm,1.7cm) node[right] {};
+		\draw[very thick,black](8cm,1.7cm) -- (9.5cm,1.7cm) node[right] {};
+		\draw[very thick,black](10cm,1.7cm) -- (11.5cm,1.7cm) node[right] {};
+		\draw[very thick,black](12cm,1.7cm) -- (13.5cm,1.7cm) node[right] {};
+		%small boxes row 3
+		\draw[very thick,black](4cm,0.8cm) -- (5.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](6cm,0.8cm) -- (7.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](8cm,0.8cm) -- (9.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](10cm,0.8cm) -- (11.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](12cm,0.8cm) -- (13.5cm,0.8cm) node[right] {};
+		
+		%small boxes row 4
+		\draw[very thick,black](4cm,0.15cm) -- (5.5cm,0.15cm) node[right] {};
+		\draw[very thick,black](6cm,0.15cm) -- (7.5cm,0.15cm) node[right] {};
+		\draw[very thick,black](8cm,0.15cm) -- (9.5cm,0.15cm) node[right] {};
+		\draw[very thick,black](10cm,0.15cm) -- (11.5cm,0.15cm) node[right] {};
+		\draw[very thick,black](12cm,0.15cm) -- (13.5cm,0.15cm) node[right] {};
+		%small boxes vertical 1
+		\draw[very thick,black](4cm,0.15cm) -- (4cm,0.8cm) node[right] {};
+		\draw[very thick,black](6cm,0.15cm) -- (6cm,0.8cm) node[right] {};
+		\draw[very thick,black](8cm,0.15cm) -- (8cm,0.8cm) node[right] {};
+		\draw[very thick,black](10cm,0.15cm) -- (10cm,0.8cm) node[right] {};
+		\draw[very thick,black](12cm,0.15cm) -- (12cm,0.8cm) node[right] {};
+		%small boxes vertical 2
+		\draw[very thick,black](5.5cm,0.15cm) -- (5.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](7.5cm,0.15cm) -- (7.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](9.5cm,0.15cm) -- (9.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](11.5cm,0.15cm) -- (11.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](13.5cm,0.15cm) -- (13.5cm,0.8cm) node[right] {};
+		
+		%small boxes vertical 3
+		\draw[very thick,black](4cm,1.7cm) -- (4cm,2.35cm) node[right] {};
+		\draw[very thick,black](6cm,1.7cm) -- (6cm,2.35cm) node[right] {};
+		\draw[very thick,black](8cm,1.7cm) -- (8cm,2.35cm) node[right] {};
+		\draw[very thick,black](10cm,1.7cm) -- (10cm,2.35cm) node[right] {};
+		\draw[very thick,black](12cm,1.7cm) -- (12cm,2.35cm) node[right] {};
+		%small boxes vertical 4
+		\draw[very thick,black](5.5cm,1.7cm) -- (5.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](7.5cm,1.7cm) -- (7.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](9.5cm,1.7cm) -- (9.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](11.5cm,1.7cm) -- (11.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](13.5cm,1.7cm) -- (13.5cm,2.35cm) node[right] {};
+		%You receive
+		\draw[black](4.7cm,1.67cm) node[above] {\normalsize\textsf{0}};
+		\draw[black](6.7cm,1.67cm) node[above] {\normalsize\textsf{19}}; 
+		\draw[black](8.7cm,1.67cm) node[above] {\normalsize\textsf{35}};
+		\draw[black](10.7cm,1.67cm) node[above] {\normalsize\textsf{51}}; 
+		\draw[black](12.7cm,1.67cm) node[above] {\normalsize\textsf{70}}; 
+		%Other receives
+		\draw[black](4.7cm,0.11cm) node[above] {\normalsize\textsf{100}};
+		\draw[black](6.7cm,0.11cm) node[above] {\normalsize\textsf{53}}; 
+		\draw[black](8.7cm,0.11cm) node[above] {\normalsize\textsf{15}};
+		\draw[black](10.7cm,0.11cm) node[above] {\normalsize\textsf{$-$24}}; 
+		\draw[black](12.7cm,0.11cm) node[above] {\normalsize\textsf{$-$70}}; 
+	\end{tikzpicture}
+	\medskip
+	\begin{tikzpicture}
+    \end{tikzpicture}	
+	\begin{tikzpicture}[scale=0.8,every shadow/.style={opacity=0.2,fill=gray!50!white}]]{helvet}%item2
+		
+		%box
+		\filldraw[drop shadow,fill=white](0cm,0cm) -- (14.4cm,0cm)-- (14.4cm,2.5cm)-- (0cm,2.5cm)-- (0cm,0cm) node[right] {};
+		
+		%text
+		\draw[black,thick](0.5,2cm) node[right,scale=0.8] {\large\textsf{You receive}};
+		\draw[black,thick](0.3,0.55) node[right,scale=0.8] {\large\textsf{Other receives}};
+		
+		%answer
+		\draw[very thick,black](14.9cm,0.2cm) -- (18cm,0.2cm) node[right] {};
+		\draw[very thick,black](14.9cm,1.2) -- (18cm,1.2cm) node[right] {};
+		\draw[black,thick](14.75,1.45) node[right,scale=0.8] {\normalsize\textsf{You}};
+		\draw[black,thick](14.75,0.45) node[right,scale=0.8] {\normalsize\textsf{Other}};
+		
+		%slider
+		\draw[very thick,black](4.75cm,1.25cm) -- (12.75cm,1.25cm) node[right] {};
+		\draw[very thick,black](4.75cm,0.9cm) -- (4.75cm,1.6cm) node[right] {};
+		\draw[very thick,black](6.75cm,0.9cm) -- (6.75cm,1.6cm) node[right] {};
+		\draw[very thick,black](8.75cm,0.9cm) -- (8.75cm,1.6cm) node[right] {};
+		\draw[very thick,black](10.75cm,0.9cm) -- (10.75cm,1.6cm) node[right] {};
+		\draw[very thick,black](12.75cm,0.9cm) -- (12.75cm,1.6cm) node[right] {};
+		%gray
+		\draw[thick,gray](5.75cm,1cm) -- (5.75cm,1.5cm) node[right] {};
+		\draw[thick,gray](7.75cm,1cm) -- (7.75cm,1.5cm) node[right] {};
+		\draw[thick,gray](9.75cm,1cm) -- (9.75cm,1.5cm) node[right] {};
+		\draw[thick,gray](11.75cm,1cm) -- (11.75cm,1.5cm) node[right] {};
+		%small boxes row 1
+		\draw[very thick,black](4cm,2.35cm) -- (5.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](6cm,2.35cm) -- (7.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](8cm,2.35cm) -- (9.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](10cm,2.35cm) -- (11.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](12cm,2.35cm) -- (13.5cm,2.35cm) node[right] {};
+		%small boxes row 2
+		\draw[very thick,black](4cm,1.7cm) -- (5.5cm,1.7cm) node[right] {};
+		\draw[very thick,black](6cm,1.7cm) -- (7.5cm,1.7cm) node[right] {};
+		\draw[very thick,black](8cm,1.7cm) -- (9.5cm,1.7cm) node[right] {};
+		\draw[very thick,black](10cm,1.7cm) -- (11.5cm,1.7cm) node[right] {};
+		\draw[very thick,black](12cm,1.7cm) -- (13.5cm,1.7cm) node[right] {};
+		%small boxes row 3
+		\draw[very thick,black](4cm,0.8cm) -- (5.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](6cm,0.8cm) -- (7.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](8cm,0.8cm) -- (9.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](10cm,0.8cm) -- (11.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](12cm,0.8cm) -- (13.5cm,0.8cm) node[right] {};
+		
+		%small boxes row 4
+		\draw[very thick,black](4cm,0.15cm) -- (5.5cm,0.15cm) node[right] {};
+		\draw[very thick,black](6cm,0.15cm) -- (7.5cm,0.15cm) node[right] {};
+		\draw[very thick,black](8cm,0.15cm) -- (9.5cm,0.15cm) node[right] {};
+		\draw[very thick,black](10cm,0.15cm) -- (11.5cm,0.15cm) node[right] {};
+		\draw[very thick,black](12cm,0.15cm) -- (13.5cm,0.15cm) node[right] {};
+		%small boxes vertical 1
+		\draw[very thick,black](4cm,0.15cm) -- (4cm,0.8cm) node[right] {};
+		\draw[very thick,black](6cm,0.15cm) -- (6cm,0.8cm) node[right] {};
+		\draw[very thick,black](8cm,0.15cm) -- (8cm,0.8cm) node[right] {};
+		\draw[very thick,black](10cm,0.15cm) -- (10cm,0.8cm) node[right] {};
+		\draw[very thick,black](12cm,0.15cm) -- (12cm,0.8cm) node[right] {};
+		%small boxes vertical 2
+		\draw[very thick,black](5.5cm,0.15cm) -- (5.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](7.5cm,0.15cm) -- (7.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](9.5cm,0.15cm) -- (9.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](11.5cm,0.15cm) -- (11.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](13.5cm,0.15cm) -- (13.5cm,0.8cm) node[right] {};
+		
+		%small boxes vertical 3
+		\draw[very thick,black](4cm,1.7cm) -- (4cm,2.35cm) node[right] {};
+		\draw[very thick,black](6cm,1.7cm) -- (6cm,2.35cm) node[right] {};
+		\draw[very thick,black](8cm,1.7cm) -- (8cm,2.35cm) node[right] {};
+		\draw[very thick,black](10cm,1.7cm) -- (10cm,2.35cm) node[right] {};
+		\draw[very thick,black](12cm,1.7cm) -- (12cm,2.35cm) node[right] {};
+		%small boxes vertical 4
+		\draw[very thick,black](5.5cm,1.7cm) -- (5.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](7.5cm,1.7cm) -- (7.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](9.5cm,1.7cm) -- (9.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](11.5cm,1.7cm) -- (11.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](13.5cm,1.7cm) -- (13.5cm,2.35cm) node[right] {};
+		%You receive
+		\draw[black](4.7cm,1.67cm) node[above] {\normalsize\textsf{0}};
+		\draw[black](6.7cm,1.67cm) node[above] {\normalsize\textsf{$-$18}}; 
+		\draw[black](8.7cm,1.67cm) node[above] {\normalsize\textsf{$-$34}};
+		\draw[black](10.7cm,1.67cm) node[above] {\normalsize\textsf{$-$51}}; 
+		\draw[black](12.7cm,1.67cm) node[above] {\normalsize\textsf{$-$70}}; 
+		%Other receives
+		\draw[black](4.7cm,0.11cm) node[above] {\normalsize\textsf{100}};
+		\draw[black](6.7cm,0.11cm) node[above] {\normalsize\textsf{54}}; 
+		\draw[black](8.7cm,0.11cm) node[above] {\normalsize\textsf{14}};
+		\draw[black](10.7cm,0.11cm) node[above] {\normalsize\textsf{$-$23}}; 
+		\draw[black](12.7cm,0.11cm) node[above] {\normalsize\textsf{$-$70}}; 
+\end{tikzpicture}
+\medskip
+	\begin{tikzpicture}
+\end{tikzpicture}	
+	\begin{tikzpicture}[scale=0.8,every shadow/.style={opacity=0.2,fill=gray!50!white}]]{helvet}%item3
+		
+		%box
+		\filldraw[drop shadow,fill=white](0cm,0cm) -- (14.4cm,0cm)-- (14.4cm,2.5cm)-- (0cm,2.5cm)-- (0cm,0cm) node[right] {};
+		
+		%text
+		\draw[black,thick](0.5,2cm) node[right,scale=0.8] {\large\textsf{You receive}};
+		\draw[black,thick](0.3,0.55) node[right,scale=0.8] {\large\textsf{Other receives}};
+		
+		%answer
+		\draw[very thick,black](14.9cm,0.2cm) -- (18cm,0.2cm) node[right] {};
+		\draw[very thick,black](14.9cm,1.2) -- (18cm,1.2cm) node[right] {};
+		\draw[black,thick](14.75,1.45) node[right,scale=0.8] {\normalsize\textsf{You}};
+		\draw[black,thick](14.75,0.45) node[right,scale=0.8] {\normalsize\textsf{Other}};
+		
+		%Slider
+		\draw[very thick,black](4.75cm,1.25cm) -- (12.75cm,1.25cm) node[right] {};
+		\draw[very thick,black](4.75cm,0.9cm) -- (4.75cm,1.6cm) node[right] {};
+		\draw[very thick,black](6.75cm,0.9cm) -- (6.75cm,1.6cm) node[right] {};
+		\draw[very thick,black](8.75cm,0.9cm) -- (8.75cm,1.6cm) node[right] {};
+		\draw[very thick,black](10.75cm,0.9cm) -- (10.75cm,1.6cm) node[right] {};
+		\draw[very thick,black](12.75cm,0.9cm) -- (12.75cm,1.6cm) node[right] {};
+		%Gray
+		\draw[thick,gray](5.75cm,1cm) -- (5.75cm,1.5cm) node[right] {};
+		\draw[thick,gray](7.75cm,1cm) -- (7.75cm,1.5cm) node[right] {};
+		\draw[thick,gray](9.75cm,1cm) -- (9.75cm,1.5cm) node[right] {};
+		\draw[thick,gray](11.75cm,1cm) -- (11.75cm,1.5cm) node[right] {};
+		%small boxes row 1
+		\draw[very thick,black](4cm,2.35cm) -- (5.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](6cm,2.35cm) -- (7.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](8cm,2.35cm) -- (9.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](10cm,2.35cm) -- (11.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](12cm,2.35cm) -- (13.5cm,2.35cm) node[right] {};
+		%small boxes row 2
+		\draw[very thick,black](4cm,1.7cm) -- (5.5cm,1.7cm) node[right] {};
+		\draw[very thick,black](6cm,1.7cm) -- (7.5cm,1.7cm) node[right] {};
+		\draw[very thick,black](8cm,1.7cm) -- (9.5cm,1.7cm) node[right] {};
+		\draw[very thick,black](10cm,1.7cm) -- (11.5cm,1.7cm) node[right] {};
+		\draw[very thick,black](12cm,1.7cm) -- (13.5cm,1.7cm) node[right] {};
+		%small boxes row 3
+		\draw[very thick,black](4cm,0.8cm) -- (5.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](6cm,0.8cm) -- (7.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](8cm,0.8cm) -- (9.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](10cm,0.8cm) -- (11.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](12cm,0.8cm) -- (13.5cm,0.8cm) node[right] {};
+		
+		%small boxes row 4
+		\draw[very thick,black](4cm,0.15cm) -- (5.5cm,0.15cm) node[right] {};
+		\draw[very thick,black](6cm,0.15cm) -- (7.5cm,0.15cm) node[right] {};
+		\draw[very thick,black](8cm,0.15cm) -- (9.5cm,0.15cm) node[right] {};
+		\draw[very thick,black](10cm,0.15cm) -- (11.5cm,0.15cm) node[right] {};
+		\draw[very thick,black](12cm,0.15cm) -- (13.5cm,0.15cm) node[right] {};
+		%small boxes vertical 1
+		\draw[very thick,black](4cm,0.15cm) -- (4cm,0.8cm) node[right] {};
+		\draw[very thick,black](6cm,0.15cm) -- (6cm,0.8cm) node[right] {};
+		\draw[very thick,black](8cm,0.15cm) -- (8cm,0.8cm) node[right] {};
+		\draw[very thick,black](10cm,0.15cm) -- (10cm,0.8cm) node[right] {};
+		\draw[very thick,black](12cm,0.15cm) -- (12cm,0.8cm) node[right] {};
+		%small boxes vertical 2
+		\draw[very thick,black](5.5cm,0.15cm) -- (5.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](7.5cm,0.15cm) -- (7.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](9.5cm,0.15cm) -- (9.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](11.5cm,0.15cm) -- (11.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](13.5cm,0.15cm) -- (13.5cm,0.8cm) node[right] {};
+		
+		%small boxes vertical 3
+		\draw[very thick,black](4cm,1.7cm) -- (4cm,2.35cm) node[right] {};
+		\draw[very thick,black](6cm,1.7cm) -- (6cm,2.35cm) node[right] {};
+		\draw[very thick,black](8cm,1.7cm) -- (8cm,2.35cm) node[right] {};
+		\draw[very thick,black](10cm,1.7cm) -- (10cm,2.35cm) node[right] {};
+		\draw[very thick,black](12cm,1.7cm) -- (12cm,2.35cm) node[right] {};
+		%small boxes vertical 4
+		\draw[very thick,black](5.5cm,1.7cm) -- (5.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](7.5cm,1.7cm) -- (7.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](9.5cm,1.7cm) -- (9.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](11.5cm,1.7cm) -- (11.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](13.5cm,1.7cm) -- (13.5cm,2.35cm) node[right] {};
+		%You receive
+		\draw[black](4.7cm,1.66cm) node[above] {\normalsize\textsf{$-$100}};
+		\draw[black](6.7cm,1.66cm) node[above] {\normalsize\textsf{$-$55}}; 
+		\draw[black](8.7cm,1.66cm) node[above] {\normalsize\textsf{$-$15}};
+		\draw[black](10.7cm,1.66cm) node[above] {\normalsize\textsf{25}}; 
+		\draw[black](12.7cm,1.66cm) node[above] {\normalsize\textsf{70}}; 
+		%Other receives
+		\draw[black](4.7cm,0.11cm) node[above] {\normalsize\textsf{0}};
+		\draw[black](6.7cm,0.11cm) node[above] {\normalsize\textsf{19}}; 
+		\draw[black](8.7cm,0.11cm) node[above] {\normalsize\textsf{35}};
+		\draw[black](10.7cm,0.11cm) node[above] {\normalsize\textsf{51}}; 
+		\draw[black](12.7cm,0.11cm) node[above] {\normalsize\textsf{70}};   
+	\end{tikzpicture}
+\medskip
+\begin{tikzpicture}
+\end{tikzpicture}	
+	\begin{tikzpicture}[scale=0.8,every shadow/.style={opacity=0.2,fill=gray!50!white}]]{helvet}%item4
+		
+		%box
+		\filldraw[drop shadow,fill=white](0cm,0cm) -- (14.4cm,0cm)-- (14.4cm,2.5cm)-- (0cm,2.5cm)-- (0cm,0cm) node[right] {};
+		
+		%Text
+		\draw[black,thick](0.5,2cm) node[right,scale=0.8] {\large\textsf{You receive}};
+		\draw[black,thick](0.3,0.55) node[right,scale=0.8] {\large\textsf{Other receives}};
+		
+		%answer
+		\draw[very thick,black](14.9cm,0.2cm) -- (18cm,0.2cm) node[right] {};
+		\draw[very thick,black](14.9cm,1.2) -- (18cm,1.2cm) node[right] {};
+		\draw[black,thick](14.75,1.45) node[right,scale=0.8] {\normalsize\textsf{You}};
+		\draw[black,thick](14.75,0.45) node[right,scale=0.8] {\normalsize\textsf{Other}};
+	
+		%slider
+		\draw[very thick,black](4.75cm,1.25cm) -- (12.75cm,1.25cm) node[right] {};
+		\draw[very thick,black](4.75cm,0.9cm) -- (4.75cm,1.6cm) node[right] {};
+		\draw[very thick,black](6.75cm,0.9cm) -- (6.75cm,1.6cm) node[right] {};
+		\draw[very thick,black](8.75cm,0.9cm) -- (8.75cm,1.6cm) node[right] {};
+		\draw[very thick,black](10.75cm,0.9cm) -- (10.75cm,1.6cm) node[right] {};
+		\draw[very thick,black](12.75cm,0.9cm) -- (12.75cm,1.6cm) node[right] {};
+		%Gray
+		\draw[thick,gray](5.75cm,1cm) -- (5.75cm,1.5cm) node[right] {};
+		\draw[thick,gray](7.75cm,1cm) -- (7.75cm,1.5cm) node[right] {};
+		\draw[thick,gray](9.75cm,1cm) -- (9.75cm,1.5cm) node[right] {};
+		\draw[thick,gray](11.75cm,1cm) -- (11.75cm,1.5cm) node[right] {};
+		%small boxes row 1
+		\draw[very thick,black](4cm,2.35cm) -- (5.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](6cm,2.35cm) -- (7.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](8cm,2.35cm) -- (9.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](10cm,2.35cm) -- (11.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](12cm,2.35cm) -- (13.5cm,2.35cm) node[right] {};
+		%small boxes row 2
+		\draw[very thick,black](4cm,1.7cm) -- (5.5cm,1.7cm) node[right] {};
+		\draw[very thick,black](6cm,1.7cm) -- (7.5cm,1.7cm) node[right] {};
+		\draw[very thick,black](8cm,1.7cm) -- (9.5cm,1.7cm) node[right] {};
+		\draw[very thick,black](10cm,1.7cm) -- (11.5cm,1.7cm) node[right] {};
+		\draw[very thick,black](12cm,1.7cm) -- (13.5cm,1.7cm) node[right] {};
+		%small boxes row 3
+		\draw[very thick,black](4cm,0.8cm) -- (5.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](6cm,0.8cm) -- (7.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](8cm,0.8cm) -- (9.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](10cm,0.8cm) -- (11.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](12cm,0.8cm) -- (13.5cm,0.8cm) node[right] {};
+		
+		%small boxes row 4
+		\draw[very thick,black](4cm,0.15cm) -- (5.5cm,0.15cm) node[right] {};
+		\draw[very thick,black](6cm,0.15cm) -- (7.5cm,0.15cm) node[right] {};
+		\draw[very thick,black](8cm,0.15cm) -- (9.5cm,0.15cm) node[right] {};
+		\draw[very thick,black](10cm,0.15cm) -- (11.5cm,0.15cm) node[right] {};
+		\draw[very thick,black](12cm,0.15cm) -- (13.5cm,0.15cm) node[right] {};
+		%small boxes vertical 1
+		\draw[very thick,black](4cm,0.15cm) -- (4cm,0.8cm) node[right] {};
+		\draw[very thick,black](6cm,0.15cm) -- (6cm,0.8cm) node[right] {};
+		\draw[very thick,black](8cm,0.15cm) -- (8cm,0.8cm) node[right] {};
+		\draw[very thick,black](10cm,0.15cm) -- (10cm,0.8cm) node[right] {};
+		\draw[very thick,black](12cm,0.15cm) -- (12cm,0.8cm) node[right] {};
+		%small boxes vertical 2
+		\draw[very thick,black](5.5cm,0.15cm) -- (5.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](7.5cm,0.15cm) -- (7.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](9.5cm,0.15cm) -- (9.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](11.5cm,0.15cm) -- (11.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](13.5cm,0.15cm) -- (13.5cm,0.8cm) node[right] {};
+		
+		%small boxes vertical 3
+		\draw[very thick,black](4cm,1.7cm) -- (4cm,2.35cm) node[right] {};
+		\draw[very thick,black](6cm,1.7cm) -- (6cm,2.35cm) node[right] {};
+		\draw[very thick,black](8cm,1.7cm) -- (8cm,2.35cm) node[right] {};
+		\draw[very thick,black](10cm,1.7cm) -- (10cm,2.35cm) node[right] {};
+		\draw[very thick,black](12cm,1.7cm) -- (12cm,2.35cm) node[right] {};
+		%small boxes vertical 4
+		\draw[very thick,black](5.5cm,1.7cm) -- (5.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](7.5cm,1.7cm) -- (7.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](9.5cm,1.7cm) -- (9.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](11.5cm,1.7cm) -- (11.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](13.5cm,1.7cm) -- (13.5cm,2.35cm) node[right] {};
+		%You receive
+		\draw[black](4.7cm,1.66cm) node[above] {\normalsize\textsf{$-$100}};
+		\draw[black](6.7cm,1.66cm) node[above] {\normalsize\textsf{$-$53}}; 
+		\draw[black](8.7cm,1.66cm) node[above] {\normalsize\textsf{$-$14}};
+		\draw[black](10.7cm,1.66cm) node[above] {\normalsize\textsf{24}}; 
+		\draw[black](12.7cm,1.66cm) node[above] {\normalsize\textsf{70}}; 
+		%Other receives
+		\draw[black](4.7cm,0.11cm) node[above] {\normalsize\textsf{0}};
+		\draw[black](6.7cm,0.11cm) node[above] {\normalsize\textsf{$-$20}}; 
+		\draw[black](8.7cm,0.11cm) node[above] {\normalsize\textsf{$-$34}};
+		\draw[black](10.7cm,0.11cm) node[above] {\normalsize\textsf{$-$50}}; 
+		\draw[black](12.7cm,0.11cm) node[above] {\normalsize\textsf{$-$70}};   
+	\end{tikzpicture}
+    \medskip
+    \begin{tikzpicture}
+    \end{tikzpicture}	
+	\begin{tikzpicture}[scale=0.8,every shadow/.style={opacity=0.2,fill=gray!50!white}]]{helvet}%item5
+		
+		%box
+		\filldraw[drop shadow,fill=white](0cm,0cm) -- (14.4cm,0cm)-- (14.4cm,2.5cm)-- (0cm,2.5cm)-- (0cm,0cm) node[right] {};
+		
+		%text
+		\draw[black,thick](0.5,2cm) node[right,scale=0.8] {\large\textsf{You receive}};
+		\draw[black,thick](0.3,0.55) node[right,scale=0.8] {\large\textsf{Other receives}};
+		
+		%Answer
+		\draw[very thick,black](14.9cm,0.2cm) -- (18cm,0.2cm) node[right] {};
+		\draw[very thick,black](14.9cm,1.2) -- (18cm,1.2cm) node[right] {};
+		\draw[black,thick](14.75,1.45) node[right,scale=0.8] {\normalsize\textsf{You}};
+		\draw[black,thick](14.75,0.45) node[right,scale=0.8]
+		{\normalsize\textsf{Other}};
+	
+		%Slider
+		\draw[very thick,black](4.75cm,1.25cm) -- (12.75cm,1.25cm) node[right] {};
+		\draw[very thick,black](4.75cm,0.9cm) -- (4.75cm,1.6cm) node[right] {};
+		\draw[very thick,black](6.75cm,0.9cm) -- (6.75cm,1.6cm) node[right] {};
+		\draw[very thick,black](8.75cm,0.9cm) -- (8.75cm,1.6cm) node[right] {};
+		\draw[very thick,black](10.75cm,0.9cm) -- (10.75cm,1.6cm) node[right] {};
+		\draw[very thick,black](12.75cm,0.9cm) -- (12.75cm,1.6cm) node[right] {};
+		%Gray
+		\draw[thick,gray](5.75cm,1cm) -- (5.75cm,1.5cm) node[right] {};
+		\draw[thick,gray](7.75cm,1cm) -- (7.75cm,1.5cm) node[right] {};
+		\draw[thick,gray](9.75cm,1cm) -- (9.75cm,1.5cm) node[right] {};
+		\draw[thick,gray](11.75cm,1cm) -- (11.75cm,1.5cm) node[right] {};
+		%small boxes row 1
+		\draw[very thick,black](4cm,2.35cm) -- (5.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](6cm,2.35cm) -- (7.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](8cm,2.35cm) -- (9.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](10cm,2.35cm) -- (11.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](12cm,2.35cm) -- (13.5cm,2.35cm) node[right] {};
+		%small boxes row 2
+		\draw[very thick,black](4cm,1.7cm) -- (5.5cm,1.7cm) node[right] {};
+		\draw[very thick,black](6cm,1.7cm) -- (7.5cm,1.7cm) node[right] {};
+		\draw[very thick,black](8cm,1.7cm) -- (9.5cm,1.7cm) node[right] {};
+		\draw[very thick,black](10cm,1.7cm) -- (11.5cm,1.7cm) node[right] {};
+		\draw[very thick,black](12cm,1.7cm) -- (13.5cm,1.7cm) node[right] {};
+		%small boxes row 3
+		\draw[very thick,black](4cm,0.8cm) -- (5.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](6cm,0.8cm) -- (7.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](8cm,0.8cm) -- (9.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](10cm,0.8cm) -- (11.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](12cm,0.8cm) -- (13.5cm,0.8cm) node[right] {};
+		
+		%small boxes row 4
+		\draw[very thick,black](4cm,0.15cm) -- (5.5cm,0.15cm) node[right] {};
+		\draw[very thick,black](6cm,0.15cm) -- (7.5cm,0.15cm) node[right] {};
+		\draw[very thick,black](8cm,0.15cm) -- (9.5cm,0.15cm) node[right] {};
+		\draw[very thick,black](10cm,0.15cm) -- (11.5cm,0.15cm) node[right] {};
+		\draw[very thick,black](12cm,0.15cm) -- (13.5cm,0.15cm) node[right] {};
+		%small boxes vertical 1
+		\draw[very thick,black](4cm,0.15cm) -- (4cm,0.8cm) node[right] {};
+		\draw[very thick,black](6cm,0.15cm) -- (6cm,0.8cm) node[right] {};
+		\draw[very thick,black](8cm,0.15cm) -- (8cm,0.8cm) node[right] {};
+		\draw[very thick,black](10cm,0.15cm) -- (10cm,0.8cm) node[right] {};
+		\draw[very thick,black](12cm,0.15cm) -- (12cm,0.8cm) node[right] {};
+		%small boxes vertical 2
+		\draw[very thick,black](5.5cm,0.15cm) -- (5.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](7.5cm,0.15cm) -- (7.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](9.5cm,0.15cm) -- (9.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](11.5cm,0.15cm) -- (11.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](13.5cm,0.15cm) -- (13.5cm,0.8cm) node[right] {};
+		
+		%small boxes vertical 3
+		\draw[very thick,black](4cm,1.7cm) -- (4cm,2.35cm) node[right] {};
+		\draw[very thick,black](6cm,1.7cm) -- (6cm,2.35cm) node[right] {};
+		\draw[very thick,black](8cm,1.7cm) -- (8cm,2.35cm) node[right] {};
+		\draw[very thick,black](10cm,1.7cm) -- (10cm,2.35cm) node[right] {};
+		\draw[very thick,black](12cm,1.7cm) -- (12cm,2.35cm) node[right] {};
+		%small boxes vertical 4
+		\draw[very thick,black](5.5cm,1.7cm) -- (5.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](7.5cm,1.7cm) -- (7.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](9.5cm,1.7cm) -- (9.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](11.5cm,1.7cm) -- (11.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](13.5cm,1.7cm) -- (13.5cm,2.35cm) node[right] {};
+		%You receive
+		\draw[black](4.7cm,1.66cm) node[above] {\normalsize\textsf{$-$70}};
+		\draw[black](6.7cm,1.66cm) node[above] {\normalsize\textsf{$-$51}}; 
+		\draw[black](8.7cm,1.66cm) node[above] {\normalsize\textsf{$-$34}};
+		\draw[black](10.7cm,1.66cm) node[above] {\normalsize\textsf{$-$18}}; 
+		\draw[black](12.7cm,1.66cm) node[above] {\normalsize\textsf{0}}; 
+		%Other receives
+		\draw[black](4.7cm,0.11cm) node[above] {\normalsize\textsf{70}};
+		\draw[black](6.7cm,0.11cm) node[above] {\normalsize\textsf{24}}; 
+		\draw[black](8.7cm,0.11cm) node[above] {\normalsize\textsf{$-$14}};
+		\draw[black](10.7cm,0.11cm) node[above] {\normalsize\textsf{$-$54}}; 
+		\draw[black](12.7cm,0.11cm) node[above] {\normalsize\textsf{$-$100}};   
+	\end{tikzpicture}
+    \medskip
+    \begin{tikzpicture}
+    \end{tikzpicture}	
+	\begin{tikzpicture}[scale=0.8,every shadow/.style={opacity=0.2,fill=gray!50!white}]]{helvet}%item6
+		
+		%box
+		\filldraw[drop shadow,fill=white](0cm,0cm) -- (14.4cm,0cm)-- (14.4cm,2.5cm)-- (0cm,2.5cm)-- (0cm,0cm) node[right] {};
+		
+		%text
+		\draw[black,thick](0.5,2cm) node[right,scale=0.8] {\large\textsf{You receive}};
+		\draw[black,thick](0.3,0.55) node[right,scale=0.8] {\large\textsf{Other receives}};
+		
+		%answer
+		\draw[very thick,black](14.9cm,0.2cm) -- (18cm,0.2cm) node[right] {};
+		\draw[very thick,black](14.9cm,1.2) -- (18cm,1.2cm) node[right] {};
+		\draw[black,thick](14.75,1.45) node[right,scale=0.8] {\normalsize\textsf{You}};
+		\draw[black,thick](14.75,0.45) node[right,scale=0.8] {\normalsize\textsf{Other}};
+		
+		%slider
+		\draw[very thick,black](4.75cm,1.25cm) -- (12.75cm,1.25cm) node[right] {};
+		\draw[very thick,black](4.75cm,0.9cm) -- (4.75cm,1.6cm) node[right] {};
+		\draw[very thick,black](6.75cm,0.9cm) -- (6.75cm,1.6cm) node[right] {};
+		\draw[very thick,black](8.75cm,0.9cm) -- (8.75cm,1.6cm) node[right] {};
+		\draw[very thick,black](10.75cm,0.9cm) -- (10.75cm,1.6cm) node[right] {};
+		\draw[very thick,black](12.75cm,0.9cm) -- (12.75cm,1.6cm) node[right] {};
+		%Gray
+		\draw[thick,gray](5.75cm,1cm) -- (5.75cm,1.5cm) node[right] {};
+		\draw[thick,gray](7.75cm,1cm) -- (7.75cm,1.5cm) node[right] {};
+		\draw[thick,gray](9.75cm,1cm) -- (9.75cm,1.5cm) node[right] {};
+		\draw[thick,gray](11.75cm,1cm) -- (11.75cm,1.5cm) node[right] {};
+		%small boxes row 1
+		\draw[very thick,black](4cm,2.35cm) -- (5.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](6cm,2.35cm) -- (7.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](8cm,2.35cm) -- (9.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](10cm,2.35cm) -- (11.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](12cm,2.35cm) -- (13.5cm,2.35cm) node[right] {};
+		%small boxes row 2
+		\draw[very thick,black](4cm,1.7cm) -- (5.5cm,1.7cm) node[right] {};
+		\draw[very thick,black](6cm,1.7cm) -- (7.5cm,1.7cm) node[right] {};
+		\draw[very thick,black](8cm,1.7cm) -- (9.5cm,1.7cm) node[right] {};
+		\draw[very thick,black](10cm,1.7cm) -- (11.5cm,1.7cm) node[right] {};
+		\draw[very thick,black](12cm,1.7cm) -- (13.5cm,1.7cm) node[right] {};
+		%small boxes row 3
+		\draw[very thick,black](4cm,0.8cm) -- (5.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](6cm,0.8cm) -- (7.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](8cm,0.8cm) -- (9.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](10cm,0.8cm) -- (11.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](12cm,0.8cm) -- (13.5cm,0.8cm) node[right] {};
+		
+		%small boxes row 4
+		\draw[very thick,black](4cm,0.15cm) -- (5.5cm,0.15cm) node[right] {};
+		\draw[very thick,black](6cm,0.15cm) -- (7.5cm,0.15cm) node[right] {};
+		\draw[very thick,black](8cm,0.15cm) -- (9.5cm,0.15cm) node[right] {};
+		\draw[very thick,black](10cm,0.15cm) -- (11.5cm,0.15cm) node[right] {};
+		\draw[very thick,black](12cm,0.15cm) -- (13.5cm,0.15cm) node[right] {};
+		%small boxes vertical 1
+		\draw[very thick,black](4cm,0.15cm) -- (4cm,0.8cm) node[right] {};
+		\draw[very thick,black](6cm,0.15cm) -- (6cm,0.8cm) node[right] {};
+		\draw[very thick,black](8cm,0.15cm) -- (8cm,0.8cm) node[right] {};
+		\draw[very thick,black](10cm,0.15cm) -- (10cm,0.8cm) node[right] {};
+		\draw[very thick,black](12cm,0.15cm) -- (12cm,0.8cm) node[right] {};
+		%small boxes vertical 2
+		\draw[very thick,black](5.5cm,0.15cm) -- (5.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](7.5cm,0.15cm) -- (7.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](9.5cm,0.15cm) -- (9.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](11.5cm,0.15cm) -- (11.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](13.5cm,0.15cm) -- (13.5cm,0.8cm) node[right] {};
+		
+		%small boxes vertical 3
+		\draw[very thick,black](4cm,1.7cm) -- (4cm,2.35cm) node[right] {};
+		\draw[very thick,black](6cm,1.7cm) -- (6cm,2.35cm) node[right] {};
+		\draw[very thick,black](8cm,1.7cm) -- (8cm,2.35cm) node[right] {};
+		\draw[very thick,black](10cm,1.7cm) -- (10cm,2.35cm) node[right] {};
+		\draw[very thick,black](12cm,1.7cm) -- (12cm,2.35cm) node[right] {};
+		%small boxes vertical 4
+		\draw[very thick,black](5.5cm,1.7cm) -- (5.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](7.5cm,1.7cm) -- (7.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](9.5cm,1.7cm) -- (9.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](11.5cm,1.7cm) -- (11.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](13.5cm,1.7cm) -- (13.5cm,2.35cm) node[right] {};
+		%You receive
+		\draw[black](4.7cm,1.67cm) node[above] {\normalsize\textsf{70}};
+		\draw[black](6.7cm,1.67cm) node[above] {\normalsize\textsf{51}}; 
+		\draw[black](8.7cm,1.67cm) node[above] {\normalsize\textsf{34}};
+		\draw[black](10.7cm,1.67cm) node[above] {\normalsize\textsf{19}}; 
+		\draw[black](12.7cm,1.67cm) node[above] {\normalsize\textsf{0}}; 
+		%Other receives
+		\draw[black](4.7cm,0.11cm) node[above] {\normalsize\textsf{70}};
+		\draw[black](6.7cm,0.11cm) node[above] {\normalsize\textsf{24}}; 
+		\draw[black](8.7cm,0.11cm) node[above] {\normalsize\textsf{$-$15}};
+		\draw[black](10.7cm,0.11cm) node[above] {\normalsize\textsf{$-$54}}; 
+		\draw[black](12.7cm,0.11cm) node[above] {\normalsize\textsf{$-$100}};   
+	\end{tikzpicture}
+   \medskip
+   \begin{tikzpicture}
+   \end{tikzpicture}	
+	\begin{tikzpicture}[scale=0.8,every shadow/.style={opacity=0.2,fill=gray!50!white}]]{helvet}%item7
+		
+		%box
+		\filldraw[drop shadow,fill=white](0cm,0cm) -- (14.4cm,0cm)-- (14.4cm,2.5cm)-- (0cm,2.5cm)-- (0cm,0cm) node[right] {};
+		
+		%Text
+		\draw[black,thick](0.5,2cm) node[right,scale=0.8] {\large\textsf{You receive}};
+		\draw[black,thick](0.3,0.55) node[right,scale=0.8] {\large\textsf{Other receives}};
+		
+		%answer
+		\draw[very thick,black](14.9cm,0.2cm) -- (18cm,0.2cm) node[right] {};
+		\draw[very thick,black](14.9cm,1.2) -- (18cm,1.2cm) node[right] {};
+		\draw[black,thick](14.75,1.45) node[right,scale=0.8] {\normalsize\textsf{You}};
+		\draw[black,thick](14.75,0.45) node[right,scale=0.8] {\normalsize\textsf{Other}};
+		
+		%slider
+		\draw[very thick,black](4.75cm,1.25cm) -- (12.75cm,1.25cm) node[right] {};
+		\draw[very thick,black](4.75cm,0.9cm) -- (4.75cm,1.6cm) node[right] {};
+		\draw[very thick,black](6.75cm,0.9cm) -- (6.75cm,1.6cm) node[right] {};
+		\draw[very thick,black](8.75cm,0.9cm) -- (8.75cm,1.6cm) node[right] {};
+		\draw[very thick,black](10.75cm,0.9cm) -- (10.75cm,1.6cm) node[right] {};
+		\draw[very thick,black](12.75cm,0.9cm) -- (12.75cm,1.6cm) node[right] {};
+		%Gray
+		\draw[thick,gray](5.75cm,1cm) -- (5.75cm,1.5cm) node[right] {};
+		\draw[thick,gray](7.75cm,1cm) -- (7.75cm,1.5cm) node[right] {};
+		\draw[thick,gray](9.75cm,1cm) -- (9.75cm,1.5cm) node[right] {};
+		\draw[thick,gray](11.75cm,1cm) -- (11.75cm,1.5cm) node[right] {};
+		%small boxes row 1
+		\draw[very thick,black](4cm,2.35cm) -- (5.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](6cm,2.35cm) -- (7.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](8cm,2.35cm) -- (9.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](10cm,2.35cm) -- (11.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](12cm,2.35cm) -- (13.5cm,2.35cm) node[right] {};
+		%small boxes row 2
+		\draw[very thick,black](4cm,1.7cm) -- (5.5cm,1.7cm) node[right] {};
+		\draw[very thick,black](6cm,1.7cm) -- (7.5cm,1.7cm) node[right] {};
+		\draw[very thick,black](8cm,1.7cm) -- (9.5cm,1.7cm) node[right] {};
+		\draw[very thick,black](10cm,1.7cm) -- (11.5cm,1.7cm) node[right] {};
+		\draw[very thick,black](12cm,1.7cm) -- (13.5cm,1.7cm) node[right] {};
+		%small boxes row 3
+		\draw[very thick,black](4cm,0.8cm) -- (5.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](6cm,0.8cm) -- (7.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](8cm,0.8cm) -- (9.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](10cm,0.8cm) -- (11.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](12cm,0.8cm) -- (13.5cm,0.8cm) node[right] {};
+		
+		%small boxes row 4
+		\draw[very thick,black](4cm,0.15cm) -- (5.5cm,0.15cm) node[right] {};
+		\draw[very thick,black](6cm,0.15cm) -- (7.5cm,0.15cm) node[right] {};
+		\draw[very thick,black](8cm,0.15cm) -- (9.5cm,0.15cm) node[right] {};
+		\draw[very thick,black](10cm,0.15cm) -- (11.5cm,0.15cm) node[right] {};
+		\draw[very thick,black](12cm,0.15cm) -- (13.5cm,0.15cm) node[right] {};
+		%small boxes vertical 1
+		\draw[very thick,black](4cm,0.15cm) -- (4cm,0.8cm) node[right] {};
+		\draw[very thick,black](6cm,0.15cm) -- (6cm,0.8cm) node[right] {};
+		\draw[very thick,black](8cm,0.15cm) -- (8cm,0.8cm) node[right] {};
+		\draw[very thick,black](10cm,0.15cm) -- (10cm,0.8cm) node[right] {};
+		\draw[very thick,black](12cm,0.15cm) -- (12cm,0.8cm) node[right] {};
+		%small boxes vertical 2
+		\draw[very thick,black](5.5cm,0.15cm) -- (5.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](7.5cm,0.15cm) -- (7.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](9.5cm,0.15cm) -- (9.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](11.5cm,0.15cm) -- (11.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](13.5cm,0.15cm) -- (13.5cm,0.8cm) node[right] {};
+		
+		%small boxes vertical 3
+		\draw[very thick,black](4cm,1.7cm) -- (4cm,2.35cm) node[right] {};
+		\draw[very thick,black](6cm,1.7cm) -- (6cm,2.35cm) node[right] {};
+		\draw[very thick,black](8cm,1.7cm) -- (8cm,2.35cm) node[right] {};
+		\draw[very thick,black](10cm,1.7cm) -- (10cm,2.35cm) node[right] {};
+		\draw[very thick,black](12cm,1.7cm) -- (12cm,2.35cm) node[right] {};
+		%small boxes vertical 4
+		\draw[very thick,black](5.5cm,1.7cm) -- (5.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](7.5cm,1.7cm) -- (7.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](9.5cm,1.7cm) -- (9.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](11.5cm,1.7cm) -- (11.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](13.5cm,1.7cm) -- (13.5cm,2.35cm) node[right] {};
+		%you receive
+		\draw[black](4.7cm,1.66cm) node[above] {\normalsize\textsf{$-$70}};
+		\draw[black](6.7cm,1.66cm) node[above] {\normalsize\textsf{$-$23}}; 
+		\draw[black](8.7cm,1.66cm) node[above] {\normalsize\textsf{16}};
+		\draw[black](10.7cm,1.66cm) node[above] {\normalsize\textsf{55}}; 
+		\draw[black](12.7cm,1.66cm) node[above] {\normalsize\textsf{100}}; 
+		%other receives
+		\draw[black](4.7cm,0.11cm) node[above] {\normalsize\textsf{$-$70}};
+		\draw[black](6.7cm,0.11cm) node[above] {\normalsize\textsf{$-$50}}; 
+		\draw[black](8.7cm,0.11cm) node[above] {\normalsize\textsf{$-$35}};
+		\draw[black](10.7cm,0.11cm) node[above] {\normalsize\textsf{$-$20}}; 
+		\draw[black](12.7cm,0.11cm) node[above] {\normalsize\textsf{0}};   
+	\end{tikzpicture}
+\medskip
+\begin{tikzpicture}
+\end{tikzpicture}	
+	\begin{tikzpicture}[scale=0.8,every shadow/.style={opacity=0.2,fill=gray!50!white}]]{helvet}%item8
+		
+		%box
+		\filldraw[drop shadow,fill=white](0cm,0cm) -- (14.4cm,0cm)-- (14.4cm,2.5cm)-- (0cm,2.5cm)-- (0cm,0cm) node[right] {};
+		
+		%text
+		\draw[black,thick](0.5,2cm) node[right,scale=0.8] {\large\textsf{You receive}};
+		\draw[black,thick](0.3,0.55) node[right,scale=0.8] {\large\textsf{Other receives}};
+		
+		%answer
+		\draw[very thick,black](14.9cm,0.2cm) -- (18cm,0.2cm) node[right] {};
+		\draw[very thick,black](14.9cm,1.2) -- (18cm,1.2cm) node[right] {};
+		\draw[black,thick](14.75,1.45) node[right,scale=0.8] {\normalsize\textsf{You}};
+		\draw[black,thick](14.75,0.45) node[right,scale=0.8] {\normalsize\textsf{Other}};
+	
+		%slider
+		\draw[very thick,black](4.75cm,1.25cm) -- (12.75cm,1.25cm) node[right] {};
+		\draw[very thick,black](4.75cm,0.9cm) -- (4.75cm,1.6cm) node[right] {};
+		\draw[very thick,black](6.75cm,0.9cm) -- (6.75cm,1.6cm) node[right] {};
+		\draw[very thick,black](8.75cm,0.9cm) -- (8.75cm,1.6cm) node[right] {};
+		\draw[very thick,black](10.75cm,0.9cm) -- (10.75cm,1.6cm) node[right] {};
+		\draw[very thick,black](12.75cm,0.9cm) -- (12.75cm,1.6cm) node[right] {};
+		%Gray
+		\draw[thick,gray](5.75cm,1cm) -- (5.75cm,1.5cm) node[right] {};
+		\draw[thick,gray](7.75cm,1cm) -- (7.75cm,1.5cm) node[right] {};
+		\draw[thick,gray](9.75cm,1cm) -- (9.75cm,1.5cm) node[right] {};
+		\draw[thick,gray](11.75cm,1cm) -- (11.75cm,1.5cm) node[right] {};
+		%small boxes row 1
+		\draw[very thick,black](4cm,2.35cm) -- (5.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](6cm,2.35cm) -- (7.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](8cm,2.35cm) -- (9.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](10cm,2.35cm) -- (11.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](12cm,2.35cm) -- (13.5cm,2.35cm) node[right] {};
+		%small boxes row 2
+		\draw[very thick,black](4cm,1.7cm) -- (5.5cm,1.7cm) node[right] {};
+		\draw[very thick,black](6cm,1.7cm) -- (7.5cm,1.7cm) node[right] {};
+		\draw[very thick,black](8cm,1.7cm) -- (9.5cm,1.7cm) node[right] {};
+		\draw[very thick,black](10cm,1.7cm) -- (11.5cm,1.7cm) node[right] {};
+		\draw[very thick,black](12cm,1.7cm) -- (13.5cm,1.7cm) node[right] {};
+		%small boxes row 3
+		\draw[very thick,black](4cm,0.8cm) -- (5.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](6cm,0.8cm) -- (7.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](8cm,0.8cm) -- (9.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](10cm,0.8cm) -- (11.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](12cm,0.8cm) -- (13.5cm,0.8cm) node[right] {};
+		
+		%small boxes row 4
+		\draw[very thick,black](4cm,0.15cm) -- (5.5cm,0.15cm) node[right] {};
+		\draw[very thick,black](6cm,0.15cm) -- (7.5cm,0.15cm) node[right] {};
+		\draw[very thick,black](8cm,0.15cm) -- (9.5cm,0.15cm) node[right] {};
+		\draw[very thick,black](10cm,0.15cm) -- (11.5cm,0.15cm) node[right] {};
+		\draw[very thick,black](12cm,0.15cm) -- (13.5cm,0.15cm) node[right] {};
+		%small boxes vertical 1
+		\draw[very thick,black](4cm,0.15cm) -- (4cm,0.8cm) node[right] {};
+		\draw[very thick,black](6cm,0.15cm) -- (6cm,0.8cm) node[right] {};
+		\draw[very thick,black](8cm,0.15cm) -- (8cm,0.8cm) node[right] {};
+		\draw[very thick,black](10cm,0.15cm) -- (10cm,0.8cm) node[right] {};
+		\draw[very thick,black](12cm,0.15cm) -- (12cm,0.8cm) node[right] {};
+		%small boxes vertical 2
+		\draw[very thick,black](5.5cm,0.15cm) -- (5.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](7.5cm,0.15cm) -- (7.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](9.5cm,0.15cm) -- (9.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](11.5cm,0.15cm) -- (11.5cm,0.8cm) node[right] {};
+		\draw[very thick,black](13.5cm,0.15cm) -- (13.5cm,0.8cm) node[right] {};
+		
+		%small boxes vertical 3
+		\draw[very thick,black](4cm,1.7cm) -- (4cm,2.35cm) node[right] {};
+		\draw[very thick,black](6cm,1.7cm) -- (6cm,2.35cm) node[right] {};
+		\draw[very thick,black](8cm,1.7cm) -- (8cm,2.35cm) node[right] {};
+		\draw[very thick,black](10cm,1.7cm) -- (10cm,2.35cm) node[right] {};
+		\draw[very thick,black](12cm,1.7cm) -- (12cm,2.35cm) node[right] {};
+		%small boxes vertical 4
+		\draw[very thick,black](5.5cm,1.7cm) -- (5.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](7.5cm,1.7cm) -- (7.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](9.5cm,1.7cm) -- (9.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](11.5cm,1.7cm) -- (11.5cm,2.35cm) node[right] {};
+		\draw[very thick,black](13.5cm,1.7cm) -- (13.5cm,2.35cm) node[right] {};
+		%You receive
+		\draw[black](4.7cm,1.66cm) node[above] {\normalsize\textsf{$-$70}};
+		\draw[black](6.7cm,1.66cm) node[above] {\normalsize\textsf{$-$25}}; 
+		\draw[black](8.7cm,1.66cm) node[above] {\normalsize\textsf{14}};
+		\draw[black](10.7cm,1.66cm) node[above] {\normalsize\textsf{52}}; 
+		\draw[black](12.7cm,1.66cm) node[above] {\normalsize\textsf{100}}; 
+		%Other receives
+		\draw[black](4.7cm,0.11cm) node[above] {\normalsize\textsf{70}};
+		\draw[black](6.7cm,0.11cm) node[above] {\normalsize\textsf{51}}; 
+		\draw[black](8.7cm,0.11cm) node[above] {\normalsize\textsf{34}};
+		\draw[black](10.7cm,0.11cm) node[above] {\normalsize\textsf{19}}; 
+		\draw[black](12.7cm,0.11cm) node[above] {\normalsize\textsf{0}};   
+	\end{tikzpicture}
+    \medskip
+
+\end{figure}
+\end{document}
